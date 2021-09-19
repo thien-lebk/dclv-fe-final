@@ -1,79 +1,69 @@
-<section class="section bg-light">
-  <div class="container bring-to-front pb-0">
-    <div class="section-heading text-center w-75 mx-auto">
-      <h2>Why Dashcore template?</h2>
-      <p class="lead text-secondary">
-        When you're looking for a template you want it to stand-out. Dashcore
-        comes with hundreds of customizable features addressed to developers and
-        designers.
-      </p>
-    </div>
-
-    <div class="shadow bg-contrast p-5 rounded">
-      <ngb-tabset
-        type="tabs tabs-clean slide d-inline-flex mb-4"
-        [destroyOnHide]="false"
+<div class="wrap-content">
+  <div class="container">
+    <div class="header">
+      <button
+        type="button"
+        [routerLink]="['../', 'create']"
+        class="btn btn-primary"
       >
-        <ngb-tab>
-          <ng-template ngbTabTitle
-            ><span class="bold text-uppercase">Developers</span></ng-template
-          >
-          <ng-template ngbTabContent>
-            <div class="row gap-y">
-              <div class="col-lg-6">
-                <h2 class="bold mb-4">
-                  Engaging developers with organized code
-                </h2>
-                <p class="lead text-secondary">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Culpa cumque deleniti facere ipsa laborum saepe, tenetur
-                  ullam? Consequatur, deserunt eaque facilis hic, illo
-                  laboriosam minima quae quia temporibus totam vel.
-                </p>
-              </div>
-              <div class="col-lg-6">
-                <figure class="px-2">
-                  <img
-                    src="assets/img/screens/developer.png"
-                    class="img-responsive shadow rounded"
-                    alt="..."
-                  />
-                </figure>
-              </div>
-            </div>
-          </ng-template>
-        </ngb-tab>
-
-        <ngb-tab>
-          <ng-template ngbTabTitle
-            ><span class="bold text-uppercase">Designers</span></ng-template
-          >
-          <ng-template ngbTabContent>
-            <div class="row gap-y">
-              <div class="col-lg-6">
-                <h2 class="bold mb-4">
-                  Engaging designers with tons of design elements
-                </h2>
-                <p class="lead text-secondary">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Culpa cumque deleniti facere ipsa laborum saepe, tenetur
-                  ullam? Consequatur, deserunt eaque facilis hic, illo
-                  laboriosam minima quae quia temporibus totam vel.
-                </p>
-              </div>
-              <div class="col-lg-6">
-                <figure class="px-2">
-                  <img
-                    src="assets/img/screens/designer.png"
-                    class="img-responsive shadow rounded"
-                    alt="..."
-                  />
-                </figure>
-              </div>
-            </div>
-          </ng-template>
-        </ngb-tab>
-      </ngb-tabset>
+        Create new app
+      </button>
+    </div>
+    <div class="list-app">
+      <div class="app border-10 border color-primary my-4">
+        <div class="wrap-img cursor-pointer" [routerLink]="['../', 'detail']">
+          <img
+            class="border-10"
+            src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/9/13/photo-1-1631488187952925878697.jpg"
+            alt=""
+          />
+        </div>
+        <div class="name cursor-pointer" [routerLink]="['../', 'detail']">
+          <span class="app-name text-dark">Application 1</span>
+          <span class="type text-dark">Application 1</span>
+        </div>
+        <div class="client-id">
+          <span>Client ID: Qa93sezCtVPI9fvi4HBE91jyOoHabdZz</span>
+          <img src="../../../../assets/images/user-app/Copy.png" alt="" />
+        </div>
+        <div class="action-op bg-secondary border-10">...</div>
+      </div>
+      <div class="app border-10 border color-primary my-4">
+        <div class="wrap-img">
+          <img
+            class="border-10"
+            src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/9/13/photo-1-1631488187952925878697.jpg"
+            alt=""
+          />
+        </div>
+        <div class="name">
+          <span class="app-name text-dark">Application 1</span>
+          <span class="type text-dark">Application 1</span>
+        </div>
+        <div class="client-id">
+          <span>Client ID: Qa93sezCtVPI9fvi4HBE91jyOoHabdZz</span>
+          <img src="../../../../assets/images/user-app/Copy.png" alt="" />
+        </div>
+        <div class="action-op bg-secondary border-10">...</div>
+      </div>
+      <div class="app border-10 border color-primary my-4">
+        <div class="wrap-img">
+          <img
+            class="border-10"
+            src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/9/13/photo-1-1631488187952925878697.jpg"
+            alt=""
+          />
+        </div>
+        <div class="name">
+          <span class="app-name text-dark">Application 1</span>
+          <span class="type text-dark">Application 1</span>
+        </div>
+        <div class="client-id">
+          <span>Client ID: Qa93sezCtVPI9fvi4HBE91jyOoHabdZz</span>
+          <img src="../../../../assets/images/user-app/Copy.png" alt="" />
+        </div>
+        <div class="action-op bg-secondary border-10">...</div>
+      </div>
     </div>
   </div>
-</section>
+</div>

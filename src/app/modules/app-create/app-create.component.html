@@ -1,0 +1,172 @@
+<section id="demos" class="section">
+  <div class="container-fluid" style="max-width: 1024px;">
+    <div class="text-center">
+      <h2 class="mb-4">Create application</h2>
+      <form
+        action=";"
+        class="cozy"
+        novalidate="novalidate"
+        style="text-align: start"
+      >
+        <div class="form-group">
+          <label for="exampleInputEmailBase" class="form-label mb-0 bold"
+            >Enter app name<span class="text-danger">*</span></label
+          >
+          <input
+            type="email "
+            class="form-control my-2"
+            id="exampleInputEmailBase"
+            aria-describedby="emailHelp"
+            placeholder="Enter app name"
+          />
+          <div id="emailHelp" class="form-text text-secondary mt-0 mb-2">
+            You can change the application name later in the application
+            settings.
+          </div>
+        </div>
+      </form>
+    </div>
+    <label for="exampleInputEmailBase" class="form-label mb-0 bold"
+      >Choose an application type</label
+    >
+    <div class=" bg-contrast p-4 rounded">
+      <div class=" row gap-y text-center">
+        <div
+          class="col-12 cursor-pointer col-md-3 py-4 px-5 d-flex flex-column mb-4 border"
+          (click)="selectedType = 'native'"
+          [ngClass]="{ 'border-primary': selectedType === 'native' }"
+        >
+          <div>
+            <div class="icon-shape mb-4">
+              <img
+                alt=""
+                class="shape shape-xxl icon-xxl"
+                src="assets/img/shps/bullets/1.svg"
+              />
+
+              <div
+                class="align-items-center bg-primary center-xy d-flex icon-xl justify-content-center p-3 rounded-circle shadow shadow-3"
+              >
+                <img
+                  alt=""
+                  class="img-responsive"
+                  src="assets/images/user-app/app-store.png"
+                />
+              </div>
+            </div>
+
+            <h4 class="text-darker bold mt-3">
+              Native
+              <br />
+              <br />
+              <br />
+            </h4>
+
+            <p class="mt-4">
+              Mobile, desktop, CLI and smart device apps running natively
+            </p>
+          </div>
+        </div>
+        <div
+          class="col-12 cursor-pointer col-md-3 py-4 px-5 d-flex flex-column mb-4 border "
+          (click)="selectedType = 'spa'"
+          [ngClass]="{ 'border-primary': selectedType === 'spa' }"
+        >
+          <div class="icon-shape mb-4">
+            <img
+              alt=""
+              class="shape shape-xxl icon-xxl"
+              src="assets/img/shps/bullets/2.svg"
+            />
+
+            <div
+              class="align-items-center center-xy d-flex gradient gradient-blue-purple icon-xl justify-content-center p-3 rounded-circle shadow shadow-4"
+            >
+              <img
+                alt=""
+                class="img-responsive"
+                src="assets/images/user-app/Sparkle.png"
+              />
+            </div>
+          </div>
+
+          <h4 class="text-darker bold mt-3">Single Page Web Applications</h4>
+
+          <p class="mt-4">
+            Mobile, desktop, CLI and smart device apps running natively.
+          </p>
+        </div>
+        <div
+          class="col-12 cursor-pointer col-md-3 py-4 px-5 d-flex flex-column mb-4 border "
+          (click)="selectedType = 'rwa'"
+          [ngClass]="{ 'border-primary': selectedType === 'rwa' }"
+        >
+          <div class="icon-shape mb-4">
+            <img
+              alt=""
+              class="shape shape-xxl icon-xxl"
+              src="assets/img/shps/bullets/3.svg"
+            />
+
+            <div
+              class="align-items-center bg-info center-xy d-flex icon-xl justify-content-center p-3 rounded-circle shadow shadow-4"
+            >
+              <img
+                alt=""
+                class="img-responsive"
+                src="assets/images/user-app/Web.png"
+              />
+            </div>
+          </div>
+
+          <h4 class="text-darker bold mt-3">Regular Web Applications</h4>
+
+          <p class="mt-4">Traditional web app using redirects.</p>
+        </div>
+        <div
+          class="col-12 cursor-pointer col-md-3 py-4 px-5 d-flex flex-column mb-4 border"
+          (click)="selectedType = 'mma'"
+          [ngClass]="{ 'border-primary': selectedType === 'mma' }"
+        >
+          <div class="icon-shape mb-4">
+            <img
+              alt=""
+              class="shape shape-xxl icon-xxl"
+              src="assets/img/shps/bullets/3.svg"
+            />
+
+            <div
+              class="align-items-center bg-info center-xy d-flex icon-xl justify-content-center p-3 rounded-circle shadow shadow-4"
+            >
+              <img
+                alt=""
+                class="img-responsive"
+                src="assets/images/user-app/Sparkle2.png"
+              />
+            </div>
+          </div>
+
+          <h4 class="text-darker bold mt-3">Machine to Machine Applications</h4>
+
+          <p class="mt-4">CLIs, daemons or services running on your backend.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer flex-end mt-4">
+      <button
+        type="button"
+        class="btn btn-rounded btn-outline-secondary mr-4"
+        [routerLink]="['../', 'list']"
+      >
+        Back
+      </button>
+      <button
+        type="button"
+        class="btn btn-rounded btn-outline-primary"
+        [routerLink]="['../', 'list']"
+      >
+        Create
+      </button>
+    </div>
+  </div>
+</section>

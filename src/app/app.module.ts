@@ -14,6 +14,7 @@ import { CountersModule } from '@app/blocks/counters/counters.module';
 import { FaqsModule } from '@app/blocks/faqs/faqs.module';
 import { CtaModule } from '@app/blocks/cta/cta.module';
 import { FootersModule } from '@app/blocks/footers/footers.module';
+import { AppCreateComponent } from './modules/app-create/app-create.component';
 
 @NgModule({
   imports: [
@@ -32,7 +33,7 @@ import { FootersModule } from '@app/blocks/footers/footers.module';
     FootersModule
     // must be imported as the last module as it contains the fallback route
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, AppCreateComponent],
   providers: [],
   bootstrap: [AppComponent]
 })

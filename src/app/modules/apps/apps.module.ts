@@ -11,9 +11,11 @@ import { ActionsModule } from '../../blocks/actions/actions.module';
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { ShellModule } from '../../shell/shell.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FeatherModule } from 'angular-feather';
+import { AppsDetailComponent } from './apps-detail/apps-detail.component';
 
 @NgModule({
-  declarations: [AppListComponent],
+  declarations: [AppListComponent, AppsDetailComponent],
   imports: [
     CommonModule,
     AppsRoutingModule,
@@ -24,7 +26,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ActionsModule,
     SwiperModule,
     ShellModule,
-    NgbModule
+    NgbModule,
+    FeatherModule
   ]
 })
 export class AppsModule {}
