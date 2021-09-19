@@ -20,8 +20,18 @@
 
   .cc-btn {
     background: #0000ff;
-    background: -moz-radial-gradient(center, ellipse cover, #0000ff 0%, #99007c 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, #0000ff 0%, #99007c 100%);
+    background: -moz-radial-gradient(
+      center,
+      ellipse cover,
+      #0000ff 0%,
+      #99007c 100%
+    );
+    background: -webkit-radial-gradient(
+      center,
+      ellipse cover,
+      #0000ff 0%,
+      #99007c 100%
+    );
     background: radial-gradient(ellipse at center, #0000ff 0%, #99007c 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#99007c',GradientType=1 );
     padding: 58px 0;

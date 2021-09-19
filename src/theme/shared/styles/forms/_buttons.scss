@@ -21,7 +21,13 @@ button {
 
 @each $size, $value in $btn-sizes {
   .btn-#{$size} {
-    @include button-size($value, $value * 2, $value * 2, $btn-line-height, $btn-border-radius);
+    @include button-size(
+      $value,
+      $value * 2,
+      $value * 2,
+      $btn-line-height,
+      $btn-border-radius
+    );
   }
 }
 

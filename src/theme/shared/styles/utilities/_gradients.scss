@@ -19,7 +19,10 @@
 
             &.alpha-#{$alpha} {
               &:after {
-                @include make-gradient(rgba($base-color, $transparency), rgba($variant-color, $transparency));
+                @include make-gradient(
+                  rgba($base-color, $transparency),
+                  rgba($variant-color, $transparency)
+                );
               }
             }
           }

@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { faCode, faRetweet, faExclamationTriangle, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCode,
+  faRetweet,
+  faExclamationTriangle,
+  faLongArrowAltRight
+} from '@fortawesome/free-solid-svg-icons';
 import { faSass } from '@fortawesome/free-brands-svg-icons';
 
 @Component({

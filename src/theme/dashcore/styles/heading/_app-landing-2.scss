@@ -13,7 +13,11 @@
     height: 100%;
     border-radius: 100px;
     transform: translate(80%, -30%) rotate(-35deg);
-    background-image: linear-gradient(45deg, theme-color("primary") 40%, theme-color("secondary") 100%);
+    background-image: linear-gradient(
+      45deg,
+      theme-color("primary") 40%,
+      theme-color("secondary") 100%
+    );
 
     @include media-breakpoint-up(md) {
       height: 150%;
@@ -92,7 +96,11 @@
           &-1 {
             transform: translate3d(-50%, -50%, 0);
             .animation {
-              @include ring-variant(20px, $app-landing-2--ring-1-width, $app-landing-2--ring-1-color);
+              @include ring-variant(
+                20px,
+                $app-landing-2--ring-1-width,
+                $app-landing-2--ring-1-color
+              );
               animation-duration: 45s;
             }
           }
@@ -100,7 +108,11 @@
           &-2 {
             transform: translate3d(-15%, -15%, 0);
             .animation {
-              @include ring-variant(20px, $app-landing-2--ring-2-width, $app-landing-2--ring-2-color);
+              @include ring-variant(
+                20px,
+                $app-landing-2--ring-2-width,
+                $app-landing-2--ring-2-color
+              );
               animation-duration: 60s;
             }
           }

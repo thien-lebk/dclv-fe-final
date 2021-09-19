@@ -91,6 +91,7 @@ $custom-switch-indicator-size: 1rem !default;
 $custom-switch-indicator-border-radius: $custom-switch-indicator-size / 2 !default;
 
 $custom-switch-height: 1.375rem !default;
-$custom-switch-spacing: ($custom-switch-height - $custom-switch-indicator-size) / 2 !default;
+$custom-switch-spacing: ($custom-switch-height - $custom-switch-indicator-size) /
+  2 !default;
 //$custom-switch-indicator-bg: $white !default;
 //$custom-switch-indicator-active-bg: $white !default;

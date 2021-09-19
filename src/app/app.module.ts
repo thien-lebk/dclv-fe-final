@@ -8,6 +8,12 @@ import { SharedModule } from '@app/shared';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './pages/home/home.module';
+import { AppLanding2Module } from '@app/pages/app-landing-2/app-landing-2.module';
+import { SlidersModule } from '@app/blocks/sliders/sliders.module';
+import { CountersModule } from '@app/blocks/counters/counters.module';
+import { FaqsModule } from '@app/blocks/faqs/faqs.module';
+import { CtaModule } from '@app/blocks/cta/cta.module';
+import { FootersModule } from '@app/blocks/footers/footers.module';
 
 @NgModule({
   imports: [
@@ -17,7 +23,14 @@ import { HomeModule } from './pages/home/home.module';
     SharedModule,
     NgbDropdownModule,
     HomeModule,
-    AppRoutingModule // must be imported as the last module as it contains the fallback route
+    AppRoutingModule,
+    AppLanding2Module,
+    SlidersModule,
+    CountersModule,
+    FaqsModule,
+    CtaModule,
+    FootersModule
+    // must be imported as the last module as it contains the fallback route
   ],
   declarations: [AppComponent],
   providers: [],

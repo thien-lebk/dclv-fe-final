@@ -6,18 +6,35 @@
           <h2>Affordable pricing plans.</h2>
 
           <p class="lead text-muted">
-            Because every company is different, DashCore comes with multiple licensing plans that fit your needs.
+            Because every company is different, DashCore comes with multiple
+            licensing plans that fit your needs.
           </p>
         </div>
       </div>
 
       <div class="text-center mt-4">
-        <div class="btn-group btn-group-toggle pricing-table-basis" data-toggle="buttons">
+        <div
+          class="btn-group btn-group-toggle pricing-table-basis"
+          data-toggle="buttons"
+        >
           <label class="btn btn-info active">
-            <input type="radio" name="pricing-value" value="monthly" autocomplete="off" checked /> Monthly basis
+            <input
+              type="radio"
+              name="pricing-value"
+              value="monthly"
+              autocomplete="off"
+              checked
+            />
+            Monthly basis
           </label>
           <label class="btn btn-info">
-            <input type="radio" name="pricing-value" value="yearly" autocomplete="off" /> Annual basis
+            <input
+              type="radio"
+              name="pricing-value"
+              value="yearly"
+              autocomplete="off"
+            />
+            Annual basis
           </label>
         </div>
         <p>(Save up to 30% off on annual plans)</p>
@@ -25,13 +42,22 @@
     </div>
 
     <div class="row align-items-center no-gutters">
-      <div class="col-md-{{ 12 / (plans.length + 1) }}" style="z-index: 1" *ngFor="let plan of plans">
-        <div class="card border-0 rounded-lg shadow-lg mb-4 mb-md-0" data-aos="fade-up">
+      <div
+        class="col-md-{{ 12 / (plans.length + 1) }}"
+        style="z-index: 1"
+        *ngFor="let plan of plans"
+      >
+        <div
+          class="card border-0 rounded-lg shadow-lg mb-4 mb-md-0"
+          data-aos="fade-up"
+        >
           <div class="card-body py-4">
             <div class="row">
               <div class="col-xl-9 mx-auto">
                 <div class="pricing text-center mb-5">
-                  <h5 class="bold text-uppercase text-primary">{{ plan.plan.name }}</h5>
+                  <h5 class="bold text-uppercase text-primary">
+                    {{ plan.plan.name }}
+                  </h5>
                   <hr class="my-4" />
 
                   <p>{{ plan.plan.description }}</p>
@@ -50,8 +76,14 @@
                 <ul class="list-unstyled">
                   <li *ngFor="let feature of plan.features">
                     <div class="media align-items-center mb-3">
-                      <div class="icon-md bg-success p-2 rounded-circle center-flex mr-3">
-                        <dc-feather [name]="feature.icon" [size]="16" [iconClass]="'stroke-contrast'"></dc-feather>
+                      <div
+                        class="icon-md bg-success p-2 rounded-circle center-flex mr-3"
+                      >
+                        <dc-feather
+                          [name]="feature.icon"
+                          [size]="16"
+                          [iconClass]="'stroke-contrast'"
+                        ></dc-feather>
                       </div>
 
                       <div class="media-body">
@@ -64,15 +96,26 @@
             </div>
           </div>
 
-          <a href="#!" class="btn btn-primary btn-lg btn-block rounded-top-0 rounded-bottom py-4">
+          <a
+            href="#!"
+            class="btn btn-primary btn-lg btn-block rounded-top-0 rounded-bottom py-4"
+          >
             Get it now
-            <dc-feather [name]="'arrow-right'" [size]="16" [iconClass]="'ml-3'"></dc-feather>
+            <dc-feather
+              [name]="'arrow-right'"
+              [size]="16"
+              [iconClass]="'ml-3'"
+            ></dc-feather>
           </a>
         </div>
       </div>
 
       <div class="col-md-{{ 12 / (plans.length + 1) }} ml-md-n3">
-        <div class="card border-0 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+        <div
+          class="card border-0 rounded-lg shadow-lg"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           <div class="card-body py-4">
             <div class="row">
               <div class="col-xl-10 mx-auto">
@@ -83,8 +126,8 @@
                   <p class="lead bold">Need a custom design?</p>
 
                   <p class="text-muted">
-                    We offer more than an Enterprise solution, contact us now and request a custom build for your
-                    business.
+                    We offer more than an Enterprise solution, contact us now
+                    and request a custom build for your business.
                   </p>
 
                   <div class="row no-gutters">
@@ -94,7 +137,11 @@
                       *ngFor="let xtra of xtras; let i = index"
                     >
                       <div class="text-center p-3">
-                        <dc-feather [name]="xtra.icon" [size]="32" [iconClass]="'stroke-primary'"></dc-feather>
+                        <dc-feather
+                          [name]="xtra.icon"
+                          [size]="32"
+                          [iconClass]="'stroke-primary'"
+                        ></dc-feather>
                         <p class="mb-0">{{ xtra.title }}</p>
                       </div>
                     </div>
@@ -104,7 +151,10 @@
             </div>
           </div>
 
-          <a href="#!" class="btn btn-light btn-lg btn-block rounded-top-0 rounded-bottom py-4">
+          <a
+            href="#!"
+            class="btn btn-light btn-lg btn-block rounded-top-0 rounded-bottom py-4"
+          >
             Contact us
             <dc-feather name="arrow-right" class="ml-3"></dc-feather>
           </a>

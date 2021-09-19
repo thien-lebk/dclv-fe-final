@@ -17,7 +17,12 @@ import { SocialRegisterComponent } from './components/social-register/social-reg
 import { SocialServicesComponent } from './components/social-services/social-services.component';
 
 @NgModule({
-  declarations: [SocialComponent, SocialHeadingComponent, SocialRegisterComponent, SocialServicesComponent],
+  declarations: [
+    SocialComponent,
+    SocialHeadingComponent,
+    SocialRegisterComponent,
+    SocialServicesComponent
+  ],
   imports: [
     SharedModule,
     ActionsModule,

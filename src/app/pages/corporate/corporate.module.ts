@@ -14,7 +14,11 @@ import { CorporateHeadingComponent } from './components/corporate-heading/corpor
 import { CorporateDoBusinessComponent } from './components/corporate-do-business/corporate-do-business.component';
 
 @NgModule({
-  declarations: [CorporateComponent, CorporateHeadingComponent, CorporateDoBusinessComponent],
+  declarations: [
+    CorporateComponent,
+    CorporateHeadingComponent,
+    CorporateDoBusinessComponent
+  ],
   imports: [
     SharedModule,
     FootersModule,

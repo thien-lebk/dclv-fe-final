@@ -8,12 +8,23 @@
       <div class="col-md-6">
         <div class="mb-5">
           <h2 class="heading-line">Ease external tools integration</h2>
-          <p class="text-muted lead">Easely integrates with another templates of our own creation.</p>
+          <p class="text-muted lead">
+            Easely integrates with another templates of our own creation.
+          </p>
         </div>
 
-        <div *ngFor="let item of features; let i = index" class="media" [class.pb-3]="i < features.length">
-          <div class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3">
-            <dc-feather [name]="item.icon" [iconClass]="'stroke-primary'"></dc-feather>
+        <div
+          *ngFor="let item of features; let i = index"
+          class="media"
+          [class.pb-3]="i < features.length"
+        >
+          <div
+            class="bg-light p-3 rounded d-flex align-items-center justify-content-center mr-3"
+          >
+            <dc-feather
+              [name]="item.icon"
+              [iconClass]="'stroke-primary'"
+            ></dc-feather>
           </div>
           <div class="media-body">
             <h5>{{ item.name }}</h5>

@@ -5,7 +5,11 @@ import { SmartBusinessComponent } from './components/smart-business/smart-busine
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: SmartBusinessComponent, data: { title: extract('DashCore - Smart Business Demo') } }
+  {
+    path: '',
+    component: SmartBusinessComponent,
+    data: { title: extract('DashCore - Smart Business Demo') }
+  }
 ];
 
 @NgModule({

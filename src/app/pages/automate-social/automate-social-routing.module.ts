@@ -5,7 +5,11 @@ import { AutomateSocialComponent } from './components/automate-social/automate-s
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: AutomateSocialComponent, data: { title: extract('DashCore - Automate Social Demo') } }
+  {
+    path: '',
+    component: AutomateSocialComponent,
+    data: { title: extract('DashCore - Automate Social Demo') }
+  }
 ];
 
 @NgModule({

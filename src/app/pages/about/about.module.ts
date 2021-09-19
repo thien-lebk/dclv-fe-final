@@ -17,7 +17,15 @@ import { AboutTeamComponent } from './components/about-team/about-team.component
 import { AboutRegisterComponent } from './components/about-register/about-register.component';
 
 @NgModule({
-  imports: [SharedModule, CountersModule, FootersModule, UsualModule, ActionsModule, SwiperModule, AboutRoutingModule],
+  imports: [
+    SharedModule,
+    CountersModule,
+    FootersModule,
+    UsualModule,
+    ActionsModule,
+    SwiperModule,
+    AboutRoutingModule
+  ],
   declarations: [
     AboutComponent,
     AboutOverviewComponent,

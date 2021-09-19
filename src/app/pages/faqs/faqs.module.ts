@@ -11,7 +11,18 @@ import { FaqsOtherChannelsComponent } from './components/faqs-other-channels/faq
 import { FaqsSidebarComponent } from './components/faqs-sidebar/faqs-sidebar.component';
 
 @NgModule({
-  declarations: [FaqsComponent, FaqsQuestionsComponent, FaqsOtherChannelsComponent, FaqsSidebarComponent],
-  imports: [SharedModule, FootersModule, FaqsBlockModule, CtaModule, FaqsRoutingModule]
+  declarations: [
+    FaqsComponent,
+    FaqsQuestionsComponent,
+    FaqsOtherChannelsComponent,
+    FaqsSidebarComponent
+  ],
+  imports: [
+    SharedModule,
+    FootersModule,
+    FaqsBlockModule,
+    CtaModule,
+    FaqsRoutingModule
+  ]
 })
 export class FaqsModule {}

@@ -11,12 +11,14 @@ export class SmartBusinessDeserveBetterComponent implements OnInit {
     {
       icon: faPaperPlane,
       title: 'easy to integrate',
-      description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.'
+      description:
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.'
     },
     {
       icon: faHeart,
       title: 'seamlessly solution',
-      description: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis'
+      description:
+        'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis'
     }
   ];
   constructor() {}

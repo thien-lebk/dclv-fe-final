@@ -4,7 +4,8 @@
     <div class="section-heading text-center w-75 mx-auto">
       <h2 class="text-contrast bold">How to videos</h2>
       <p class="lead text-contrast">
-        Take a look at how you can take advantage of the tons of features included with our template.
+        Take a look at how you can take advantage of the tons of features
+        included with our template.
       </p>
     </div>
 
@@ -13,11 +14,18 @@
         <div class="card shadow-box shadow-hover border-0">
           <dc-modal-video [identifier]="'myModal'" [videoId]="post.videoId">
             <div
-              [style.background-image]="'url(https://picsum.photos/350/200/?random&gravity=' + post.gravity + ')'"
+              [style.background-image]="
+                'url(https://picsum.photos/350/200/?random&gravity=' +
+                post.gravity +
+                ')'
+              "
               class="blanket gradient gradient-blue-purple alpha-3 p-6 image-background cover center-flex"
             >
               <div class="content">
-                <dc-feather [name]="'play'" [iconClass]="'stroke-contrast'"></dc-feather>
+                <dc-feather
+                  [name]="'play'"
+                  [iconClass]="'stroke-contrast'"
+                ></dc-feather>
               </div>
             </div>
           </dc-modal-video>

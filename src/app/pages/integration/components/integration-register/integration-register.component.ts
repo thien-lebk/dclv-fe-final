@@ -8,7 +8,12 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 })
 export class IntegrationRegisterComponent implements OnInit {
   check = faCheck;
-  features = ['Service integrations', 'Partners integration', 'Right technology', 'Get discovered'];
+  features = [
+    'Service integrations',
+    'Partners integration',
+    'Right technology',
+    'Get discovered'
+  ];
 
   constructor() {}
 

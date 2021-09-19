@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faFacebook, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedinIn
+} from '@fortawesome/free-brands-svg-icons';
 
 import { environment } from '@env/environment';
 

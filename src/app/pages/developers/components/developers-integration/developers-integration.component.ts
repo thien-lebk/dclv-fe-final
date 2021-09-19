@@ -12,7 +12,8 @@ export class DevelopersIntegrationComponent implements OnInit {
   blocks = [
     {
       title: 'Engagement API',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur.'
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, consequuntur.'
     },
     {
       title: 'Invoicing API',
@@ -21,7 +22,8 @@ export class DevelopersIntegrationComponent implements OnInit {
     },
     {
       title: 'Reporting API',
-      description: 'Earum harum in laudantium nobis obcaecati odio, praesentium, quis sequi soluta vel veniam.'
+      description:
+        'Earum harum in laudantium nobis obcaecati odio, praesentium, quis sequi soluta vel veniam.'
     }
   ];
 

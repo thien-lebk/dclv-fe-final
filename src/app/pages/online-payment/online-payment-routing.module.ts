@@ -6,7 +6,11 @@ import { OnlinePaymentComponent } from './components/online-payment/online-payme
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: OnlinePaymentComponent, data: { title: extract('Online Payment') } }
+  {
+    path: '',
+    component: OnlinePaymentComponent,
+    data: { title: extract('Online Payment') }
+  }
 ];
 
 @NgModule({

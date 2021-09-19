@@ -19,7 +19,12 @@ export class AppLanding2SafetyComponent implements OnInit {
     }
   ];
 
-  cards: object[] = [{ class: 'mt-md-6' }, { class: '' }, { class: 'mt-md-6' }, { class: 'mx-auto mt-md-4n' }];
+  cards: object[] = [
+    { class: 'mt-md-6' },
+    { class: '' },
+    { class: 'mt-md-6' },
+    { class: 'mx-auto mt-md-4n' }
+  ];
   constructor() {}
 
   ngOnInit() {}

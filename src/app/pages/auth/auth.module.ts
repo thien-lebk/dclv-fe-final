@@ -9,7 +9,12 @@ import { ForgotComponent } from './components/forgot/forgot.component';
 import { AuthLayoutComponent } from './components/auth-layout/auth-layout.component';
 
 @NgModule({
-  declarations: [LoginComponent, RegisterComponent, ForgotComponent, AuthLayoutComponent],
+  declarations: [
+    LoginComponent,
+    RegisterComponent,
+    ForgotComponent,
+    AuthLayoutComponent
+  ],
   imports: [CommonModule, AuthRoutingModule, SharedModule]
 })
 export class AuthModule {}

@@ -5,7 +5,11 @@ import { IntegrationComponent } from './components/integration/integration.compo
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: IntegrationComponent, data: { title: extract('About') } }
+  {
+    path: '',
+    component: IntegrationComponent,
+    data: { title: extract('About') }
+  }
 ];
 
 @NgModule({

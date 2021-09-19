@@ -4,8 +4,8 @@
       <h2>Our customers have something to say</h2>
 
       <p class="lead text-muted">
-        They are the best, our customer want to let you know how DashCore is helping them to achieve their goals and how
-        simple is to use it
+        They are the best, our customer want to let you know how DashCore is
+        helping them to achieve their goals and how simple is to use it
       </p>
     </div>
 
@@ -13,15 +13,30 @@
       <div class="row no-gutters">
         <div class="col-md-6">
           <!-- Images slider, will fade -->
-          <div class="swiper-container h-100" [swiper]="fadingConfig" [index]="currentSlide">
+          <div
+            class="swiper-container h-100"
+            [swiper]="fadingConfig"
+            [index]="currentSlide"
+          >
             <div class="swiper-wrapper">
-              <div class="swiper-slide" *ngFor="let testimonial of testimonials">
+              <div
+                class="swiper-slide"
+                *ngFor="let testimonial of testimonials"
+              >
                 <figure
                   class="m-0 image-background cover"
-                  [style.background-image]="'url(assets/img/testimonials/' + testimonial.customer.picture + '.jpg)'"
+                  [style.background-image]="
+                    'url(assets/img/testimonials/' +
+                    testimonial.customer.picture +
+                    '.jpg)'
+                  "
                 >
                   <img
-                    [src]="'assets/img/testimonials/' + testimonial.customer.picture + '.jpg'"
+                    [src]="
+                      'assets/img/testimonials/' +
+                      testimonial.customer.picture +
+                      '.jpg'
+                    "
                     alt="..."
                     class="img--responsive invisible"
                   />
@@ -42,14 +57,27 @@
 
         <div class="col-md-6">
           <!-- Testimonials slider, will slide -->
-          <div class="swiper-container h-100" [swiper]="slidingConfig" (indexChange)="onIndexChange($event)">
+          <div
+            class="swiper-container h-100"
+            [swiper]="slidingConfig"
+            (indexChange)="onIndexChange($event)"
+          >
             <div class="swiper-wrapper">
-              <div class="swiper-slide" *ngFor="let testimonial of testimonials">
-                <div class="card-body h-100 d-flex flex-column justify-content-center">
+              <div
+                class="swiper-slide"
+                *ngFor="let testimonial of testimonials"
+              >
+                <div
+                  class="card-body h-100 d-flex flex-column justify-content-center"
+                >
                   <blockquote class="blockquote text-center mb-0">
                     <figure class="mockup mb-5">
                       <img
-                        [src]="'assets/img/logos/companies/' + testimonial.logo + '.svg'"
+                        [src]="
+                          'assets/img/logos/companies/' +
+                          testimonial.logo +
+                          '.svg'
+                        "
                         alt="..."
                         class="img-responsive"
                       />
@@ -59,7 +87,9 @@
                       {{ testimonial.testimonial }}
                     </p>
                     <footer class="blockquote-footer">
-                      <span class="h6 text-uppercase">{{ testimonial.customer.name }}</span>
+                      <span class="h6 text-uppercase">{{
+                        testimonial.customer.name
+                      }}</span>
                     </footer>
                   </blockquote>
                 </div>

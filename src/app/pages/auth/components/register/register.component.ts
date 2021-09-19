@@ -1,5 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { faLongArrowAltRight, faUserPlus, faAddressCard, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import {
+  faLongArrowAltRight,
+  faUserPlus,
+  faAddressCard,
+  faEnvelope,
+  faLock
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'dc-register',

@@ -186,12 +186,18 @@
         $style: nth($animations-map, $i);
 
         &:nth-child(#{$i}) {
-          animation: floating #{map-get($style, animation-duration) / 3}s ease-in-out infinite alternate;
+          animation: floating
+            #{map-get($style, animation-duration) /
+            3}s
+            ease-in-out
+            infinite
+            alternate;
           bottom: map-get($style, bottom) / 100 * 100%;
           left: map-get($style, left) / 100 * 100%;
 
           @include media-breakpoint-up(lg) {
-            animation: bubble-left-v #{map-get($style, animation-duration)}s linear infinite,
+            animation: bubble-left-v #{map-get($style, animation-duration)}s
+                linear infinite,
               shake-v 2s ease-in-out infinite alternate;
             bottom: 50%;
           }

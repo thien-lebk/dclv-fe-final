@@ -19,7 +19,11 @@ $bubbles-wrapper-height: 600px;
     height: 200%;
     border-radius: 100px;
     transform: translate(0, -45%) rotate(-12deg);
-    background-image: linear-gradient(45deg, theme-color("light") 40%, theme-color("secondary") 100%);
+    background-image: linear-gradient(
+      45deg,
+      theme-color("light") 40%,
+      theme-color("secondary") 100%
+    );
 
     @include media-breakpoint-up($grid-float-breakpoint) {
       transform: translate(0, -70%) rotate(-12deg);
@@ -54,7 +58,8 @@ $bubbles-wrapper-height: 600px;
     $col: 0;
     @for $i from 1 through 42 {
       &.bubble-#{$i} {
-        background-position: (-$bubble-icon-size * $col) (-$bubble-icon-size * $row);
+        background-position: (-$bubble-icon-size * $col)
+          (-$bubble-icon-size * $row);
       }
 
       @if $i % $sheet-icons-in-row == 0 {

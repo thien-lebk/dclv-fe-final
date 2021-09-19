@@ -13,7 +13,9 @@ describe('AutomateSocialAutomationSolutionComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AutomateSocialAutomationSolutionComponent);
+    fixture = TestBed.createComponent(
+      AutomateSocialAutomationSolutionComponent
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

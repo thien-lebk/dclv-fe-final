@@ -46,7 +46,8 @@
   max-width: 255px;
   border-radius: 36px;
   padding: 55px 0;
-  box-shadow: inset 0 4px 10px 1px $iphone-bg-color, inset 0 0 6px 0 rgba(66, 77, 86, 0.5), 0 2px 0 #aeb5bb,
+  box-shadow: inset 0 4px 10px 1px $iphone-bg-color,
+    inset 0 0 6px 0 rgba(66, 77, 86, 0.5), 0 2px 0 #aeb5bb,
     0 20px 50px -25px rgba(0, 0, 0, 0.5);
 
   /* speaker */
@@ -141,7 +142,8 @@
   max-width: $x-phone-width;
   border-radius: $x-border-radius;
   padding: $x-border-width;
-  box-shadow: inset 0 0 6px 0 rgba(66, 77, 86, 0.5), 0 1px 0 #aeb5bb, 0 20px 50px -25px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 6px 0 rgba(66, 77, 86, 0.5), 0 1px 0 #aeb5bb,
+    0 20px 50px -25px rgba(0, 0, 0, 0.5);
 
   &:before,
   &:after {
@@ -199,7 +201,8 @@
   position: relative;
 
   .mockup {
-    box-shadow: inset 0 4px 10px 1px #ffffff, inset 0 0 6px 0 rgba(66, 77, 86, 0.5),
+    box-shadow: inset 0 4px 10px 1px #ffffff,
+      inset 0 0 6px 0 rgba(66, 77, 86, 0.5),
       0 20px 50px -25px rgba(0, 0, 0, 0.5), 0 0 1px rgba(0, 0, 0, 0.1);
 
     max-width: 210px;
@@ -242,8 +245,8 @@
     height: $browser-action-size;
     border-radius: 50%;
     background: $browser-action-color-1;
-    box-shadow: 0 0 0 1px $browser-action-color-1, 1.5em 0 0 1px $browser-action-color-2,
-      3em 0 0 1px $browser-action-color-3;
+    box-shadow: 0 0 0 1px $browser-action-color-1,
+      1.5em 0 0 1px $browser-action-color-2, 3em 0 0 1px $browser-action-color-3;
   }
 
   img {

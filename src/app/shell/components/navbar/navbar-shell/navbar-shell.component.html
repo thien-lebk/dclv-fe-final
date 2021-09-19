@@ -1,6 +1,10 @@
 <nav
-  class="navbar navbar-expand-md navigation sidebar-left fixed-top"
-  [ngClass]="{ 'navbar-expanded': navbarExpanded, 'navbar-sticky': navbarSticky, 'dark-link': darkLinks }"
+  class="navbar navbar-expand-md navigation sidebar-left fixed-top bg-dark"
+  [ngClass]="{
+    'navbar-expanded': navbarExpanded,
+    'navbar-sticky': navbarSticky,
+    'dark-link': darkLinks
+  }"
 >
   <div class="container">
     <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
@@ -10,10 +14,23 @@
     </button>
 
     <a href="#main" class="navbar-brand">
-      <img src="assets/img/logo.png" alt="Dashcore" class="logo logo-sticky" *ngIf="useOnlyDarkLogo; else logos" />
+      <img
+        src="assets/img/logo.png"
+        alt="Dashcore"
+        class="logo logo-sticky"
+        *ngIf="useOnlyDarkLogo; else logos"
+      />
       <ng-template #logos>
-        <img src="assets/img/logo.png" alt="Dashcore" class="logo logo-sticky d-block d-md-none" />
-        <img src="assets/img/logo-light.png" alt="Dashcore" class="logo d-none d-md-block" />
+        <img
+          src="assets/img/logo.png"
+          alt="Dashcore"
+          class="logo logo-sticky d-block d-md-none"
+        />
+        <img
+          src="assets/img/logo-light.png"
+          alt="Dashcore"
+          class="logo d-none d-md-block"
+        />
       </ng-template>
     </a>
 

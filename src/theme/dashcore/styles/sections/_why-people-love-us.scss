@@ -83,7 +83,11 @@
 
       div {
         opacity: 0.15;
-        @include triangle-variant(95px, $wplu--triangle-bg-color, $wplu--triangle2-bg-color);
+        @include triangle-variant(
+          95px,
+          $wplu--triangle-bg-color,
+          $wplu--triangle2-bg-color
+        );
         animation-duration: 50s;
       }
     }

@@ -22,7 +22,12 @@
   <div class="container" [ngClass]="containerClass">
     <div class="row">
       <div class="col-md-{{ rows || 6 }}">
-        <h1 class="regular display-4 text-contrast" [ngClass]="{ 'mb-4': subtitle }">{{ title }}</h1>
+        <h1
+          class="regular display-4 text-contrast"
+          [ngClass]="{ 'mb-4': subtitle }"
+        >
+          {{ title }}
+        </h1>
         <p class="lead text-contrast" *ngIf="subtitle">{{ subtitle }}</p>
       </div>
     </div>

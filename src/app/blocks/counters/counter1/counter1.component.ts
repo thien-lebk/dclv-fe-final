@@ -21,6 +21,8 @@ export class Counter1Component implements OnInit {
   ngOnInit() {}
 
   getPaddingBottom() {
-    return this.ContainerPaddingBottom ? `pb-${this.ContainerPaddingBottom}` : '';
+    return this.ContainerPaddingBottom
+      ? `pb-${this.ContainerPaddingBottom}`
+      : '';
   }
 }

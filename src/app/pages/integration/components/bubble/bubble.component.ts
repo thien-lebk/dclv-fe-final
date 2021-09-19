@@ -29,7 +29,10 @@ export class BubbleComponent implements OnInit {
   private noiseSeedY: number;
   private noise: Noise;
 
-  constructor(public sanitizer: DomSanitizer, private bubblesService: BubblesService) {
+  constructor(
+    public sanitizer: DomSanitizer,
+    private bubblesService: BubblesService
+  ) {
     this.noiseSeedX = Math.floor(Math.random() * 64000);
     this.noiseSeedY = Math.floor(Math.random() * 64000);
 
@@ -58,7 +61,13 @@ export class BubbleComponent implements OnInit {
     let yWithNoise = this.spec.y + randomY * NOISE_AMOUNT;
 
     this.transformStyle = this.sanitizer.bypassSecurityTrustStyle(
-      'translate(' + xWithNoise + 'px, ' + yWithNoise + 'px) scale(' + (this.spec.s || 1) + ')'
+      'translate(' +
+        xWithNoise +
+        'px, ' +
+        yWithNoise +
+        'px) scale(' +
+        (this.spec.s || 1) +
+        ')'
     );
 
     if (this.spec.x < -200) {

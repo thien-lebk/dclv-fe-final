@@ -4,8 +4,9 @@
     <div class="section-heading text-center">
       <h2>What <span class="bold">We Offer</span></h2>
       <p class="text-secondary lead">
-        DashCore is a complete set of design and developing tools. Either your business is just starting or have years
-        on the market, you can take advantage of it.
+        DashCore is a complete set of design and developing tools. Either your
+        business is just starting or have years on the market, you can take
+        advantage of it.
       </p>
     </div>
 
@@ -16,7 +17,11 @@
         [class.mr-3]="i < cards.length"
       >
         <div class="card-body p-md-5 text-center">
-          <fa-icon [icon]="card.icon.name" size="2x" [class]="card.icon.class"></fa-icon>
+          <fa-icon
+            [icon]="card.icon.name"
+            size="2x"
+            [class]="card.icon.class"
+          ></fa-icon>
           <p class="bold {{ card.title.class }}">{{ card.title.text }}</p>
         </div>
       </div>

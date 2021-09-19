@@ -8,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class SliderBringToLifeComponent implements OnInit {
   elements = [
     { label: 'Clean inbox UI design', img: 'inbox', icon: 'mail' },
-    { label: 'Outstanding calendar UI design', img: 'calendar', icon: 'calendar' },
-    { label: 'Draft purchases with the invoice feature', img: 'invoice', icon: 'file' }
+    {
+      label: 'Outstanding calendar UI design',
+      img: 'calendar',
+      icon: 'calendar'
+    },
+    {
+      label: 'Draft purchases with the invoice feature',
+      img: 'invoice',
+      icon: 'file'
+    }
   ];
 
   currentSlide: number = 0;

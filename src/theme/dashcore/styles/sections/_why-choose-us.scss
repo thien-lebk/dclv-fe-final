@@ -10,7 +10,8 @@
   }
 
   .browser {
-    transform: translate(40%, -10%) rotate3d(0.342, -0.94, 0, 22deg) rotateZ(7deg);
+    transform: translate(40%, -10%) rotate3d(0.342, -0.94, 0, 22deg)
+      rotateZ(7deg);
     width: 380px;
     bottom: 0;
 
@@ -21,7 +22,8 @@
   }
 
   .iphone {
-    transform: translate(-20%, 10%) rotate3d(0.5, 0.866, 0, 16deg) rotateZ(-7deg);
+    transform: translate(-20%, 10%) rotate3d(0.5, 0.866, 0, 16deg)
+      rotateZ(-7deg);
 
     @include media-breakpoint-down($grid-float-breakpoint-max) {
       width: 60%;

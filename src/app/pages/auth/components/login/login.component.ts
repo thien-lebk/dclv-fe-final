@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faLongArrowAltRight, faLock, faUser } from '@fortawesome/free-solid-svg-icons';
+import {
+  faLongArrowAltRight,
+  faLock,
+  faUser
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'dc-login',

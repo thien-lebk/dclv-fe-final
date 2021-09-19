@@ -6,7 +6,11 @@
   margin: 0;
 }
 
-@mixin triangle-variant($size, $background: transparent, $background2: transparent) {
+@mixin triangle-variant(
+  $size,
+  $background: transparent,
+  $background2: transparent
+) {
   position: relative;
 
   background-color: $background;
@@ -35,7 +39,8 @@
   }
 
   &:before {
-    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%);
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
+      translate(0, -50%);
   }
 
   &:after {

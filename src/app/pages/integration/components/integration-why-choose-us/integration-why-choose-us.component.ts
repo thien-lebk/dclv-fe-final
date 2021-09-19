@@ -10,7 +10,8 @@ export class IntegrationWhyChooseUsComponent implements OnInit {
     {
       name: 'Integrations',
       icon: 'box',
-      description: 'We designed DashCore to be able to integrate with additional templates designed by our team'
+      description:
+        'We designed DashCore to be able to integrate with additional templates designed by our team'
     },
     {
       name: 'Components',

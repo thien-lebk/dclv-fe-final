@@ -12,6 +12,14 @@ import { PricingIncludeComponent } from './components/pricing-include/pricing-in
 
 @NgModule({
   declarations: [PricingComponent, PricingIncludeComponent],
-  imports: [SharedModule, FootersModule, CtaModule, UsualModule, FaqsModule, PricingBlocksModule, PricingRoutingModule]
+  imports: [
+    SharedModule,
+    FootersModule,
+    CtaModule,
+    UsualModule,
+    FaqsModule,
+    PricingBlocksModule,
+    PricingRoutingModule
+  ]
 })
 export class PricingModule {}

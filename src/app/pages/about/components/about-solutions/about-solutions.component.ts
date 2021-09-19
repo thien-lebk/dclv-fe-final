@@ -16,12 +16,14 @@ export class AboutSolutionsComponent implements OnInit {
     {
       icon: 'settings',
       title: 'Free Updates',
-      description: "You'll get lifetime free updates as we improve or add new features."
+      description:
+        "You'll get lifetime free updates as we improve or add new features."
     },
     {
       icon: 'award',
       title: 'Premium Support',
-      description: 'In case you need it, We got you covered, with our premium quality fast support service.'
+      description:
+        'In case you need it, We got you covered, with our premium quality fast support service.'
     }
   ];
 

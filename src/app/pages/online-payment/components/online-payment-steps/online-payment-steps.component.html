@@ -5,7 +5,10 @@
   </div>
 
   <div class="container pb-9">
-    <div class="row gap-y align-items-center py-5" *ngFor="let step of steps; let i = index">
+    <div
+      class="row gap-y align-items-center py-5"
+      *ngFor="let step of steps; let i = index"
+    >
       <div class="col-md-6" [class.order-md-2]="(i + 1) % 2 === 0">
         <figure [attr.data-aos]="(i + 1) % 2 == 0 ? 'fade-left' : 'fade-right'">
           <img
@@ -28,7 +31,11 @@
       <div class="col-md-6">
         <div class="icon-xxl mb-4">
           <div class="icon-shape">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 219.98 213.35" class="shape shape-xxl drop-shadow">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 219.98 213.35"
+              class="shape shape-xxl drop-shadow"
+            >
               <defs>
                 <style>
                   .cls-shape {
@@ -47,14 +54,19 @@
               </g>
             </svg>
 
-            <fa-icon [icon]="step.icon" class="icon center-xy text-contrast" size="2x"></fa-icon>
+            <fa-icon
+              [icon]="step.icon"
+              class="icon center-xy text-contrast"
+              size="2x"
+            ></fa-icon>
           </div>
         </div>
 
         <h2 class="bold text-capitalize">{{ step.title }}</h2>
         <p class="regular">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium autem dolorem eaque est eum fugit harum
-          maiores minima nisi nobis, possimus, quas qui quo ratione sequi suscipit vel vero voluptas?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+          autem dolorem eaque est eum fugit harum maiores minima nisi nobis,
+          possimus, quas qui quo ratione sequi suscipit vel vero voluptas?
         </p>
         <a
           href="javascript:;"

@@ -1,6 +1,9 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
-import { faInfoCircle, faLongArrowAltRight } from '@fortawesome/free-solid-svg-icons';
+import {
+  faInfoCircle,
+  faLongArrowAltRight
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'dc-slider-card-projects',
@@ -15,13 +18,41 @@ export class SliderCardProjectsComponent implements OnInit {
   liftUp: boolean = true;
 
   features = [
-    { title: ['Social ', 'Integration'], description: 'Consequuntur ea sapiente ut', image: '' },
-    { title: ['Design ', 'Strategy'], description: 'Alias eum expedita illo rem!', image: '' },
-    { title: ['Save ', 'Money'], description: 'Consectetur adipisicing elit', image: '' },
-    { title: ['Business ', 'Brain'], description: 'Rem repellendus rerum, vel!', image: '' },
-    { title: ['Worldwide ', 'Support'], description: 'Consectetur adipisicing elit', image: '' },
-    { title: ['Social ', 'Settings'], description: 'Facilis numquam odio sit amet.', image: '' },
-    { title: ['Insightful', 'Statistics'], description: 'facere quasi rem suscipit!', image: '' }
+    {
+      title: ['Social ', 'Integration'],
+      description: 'Consequuntur ea sapiente ut',
+      image: ''
+    },
+    {
+      title: ['Design ', 'Strategy'],
+      description: 'Alias eum expedita illo rem!',
+      image: ''
+    },
+    {
+      title: ['Save ', 'Money'],
+      description: 'Consectetur adipisicing elit',
+      image: ''
+    },
+    {
+      title: ['Business ', 'Brain'],
+      description: 'Rem repellendus rerum, vel!',
+      image: ''
+    },
+    {
+      title: ['Worldwide ', 'Support'],
+      description: 'Consectetur adipisicing elit',
+      image: ''
+    },
+    {
+      title: ['Social ', 'Settings'],
+      description: 'Facilis numquam odio sit amet.',
+      image: ''
+    },
+    {
+      title: ['Insightful', 'Statistics'],
+      description: 'facere quasi rem suscipit!',
+      image: ''
+    }
   ];
 
   config: SwiperConfigInterface = {

@@ -13,7 +13,9 @@ describe('BusinessSolutionsPricingIncludesComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BusinessSolutionsPricingIncludesComponent);
+    fixture = TestBed.createComponent(
+      BusinessSolutionsPricingIncludesComponent
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

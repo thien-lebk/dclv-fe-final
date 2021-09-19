@@ -119,8 +119,18 @@ const icons = {
 };
 
 @NgModule({
-  imports: [CommonModule, HttpClientModule, FeatherModule.pick(icons), FontAwesomeModule],
-  declarations: [LoaderComponent, PageHeaderWaveComponent, FeatherComponent, BadgeComponent],
+  imports: [
+    CommonModule,
+    HttpClientModule,
+    FeatherModule.pick(icons),
+    FontAwesomeModule
+  ],
+  declarations: [
+    LoaderComponent,
+    PageHeaderWaveComponent,
+    FeatherComponent,
+    BadgeComponent
+  ],
   exports: [
     LoaderComponent,
     PageHeaderWaveComponent,

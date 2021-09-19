@@ -1,12 +1,17 @@
 <section id="features" class="section bg-contrast edge top-left">
   <div class="container">
     <div class="section-heading mb-6 text-center">
-      <h5 class="text-primary bold small text-uppercase">Reasons to use DashCore</h5>
+      <h5 class="text-primary bold small text-uppercase">
+        Reasons to use DashCore
+      </h5>
       <h2>Know what you can do Online</h2>
     </div>
 
     <div class="row gap-y text-center text-md-left">
-      <div class="col-md-4 py-4 rounded shadow-hover text-center" *ngFor="let element of elements">
+      <div
+        class="col-md-4 py-4 rounded shadow-hover text-center"
+        *ngFor="let element of elements"
+      >
         <div class="icon-shape mb-4">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,13 +35,18 @@
               </g>
             </g>
           </svg>
-          <dc-feather [name]="element.icon" [iconClass]="'stroke-contrast'" [class]="'icon center-xy'"></dc-feather>
+          <dc-feather
+            [name]="element.icon"
+            [iconClass]="'stroke-contrast'"
+            [class]="'icon center-xy'"
+          ></dc-feather>
         </div>
 
         <h5 class="bold text-capitalize">{{ element.title }}</h5>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores ea fugiat nesciunt quisquam. Assumenda
-          dolore error nulla pariatur voluptatem?
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab dolores
+          ea fugiat nesciunt quisquam. Assumenda dolore error nulla pariatur
+          voluptatem?
         </p>
       </div>
     </div>

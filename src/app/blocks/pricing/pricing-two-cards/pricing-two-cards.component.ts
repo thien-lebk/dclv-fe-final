@@ -12,7 +12,8 @@ export class PricingTwoCardsComponent implements OnInit {
       plan: {
         name: 'Standard',
         price: { monthly: 0.99, yearly: 0.78 },
-        description: 'Everything you can get from a professional solution to keep your business on its way to success'
+        description:
+          'Everything you can get from a professional solution to keep your business on its way to success'
       },
       features: [
         {

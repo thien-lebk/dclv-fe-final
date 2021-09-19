@@ -6,7 +6,11 @@ import { AppLandingComponent } from './components/app-landing/app-landing.compon
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: AppLandingComponent, data: { title: extract('App Landing') } }
+  {
+    path: '',
+    component: AppLandingComponent,
+    data: { title: extract('App Landing') }
+  }
 ];
 
 @NgModule({

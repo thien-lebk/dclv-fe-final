@@ -1,6 +1,8 @@
 <div class="card card-demo card--blog shadow-box border-0">
   <div class="card-body d-flex align-items-center">
-    <span class="is-new badge badge-danger badge-pill" *ngIf="demo.new">New</span>
+    <span class="is-new badge badge-danger badge-pill" *ngIf="demo.new"
+      >New</span
+    >
 
     <h4 class="card-title mb-0 text-capitalize">{{ demo.title }}</h4>
 
@@ -27,7 +29,11 @@
     <div class="preview-pane">
       <div class="preview-page">
         <ngx-simplebar>
-          <img class="card-img-bottom img-responsive" src="assets/img/demo/screen/{{ demo.cover }}.png" alt="" />
+          <img
+            class="card-img-bottom img-responsive"
+            src="assets/img/demo/screen/{{ demo.cover }}.png"
+            alt=""
+          />
         </ngx-simplebar>
       </div>
     </div>

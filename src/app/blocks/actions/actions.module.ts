@@ -7,8 +7,16 @@ import { FormContactComponent } from './form-contact/form-contact.component';
 import { FormRegisterCompanyComponent } from './form-register-company/form-register-company.component';
 
 @NgModule({
-  declarations: [FormRegisterSimpleInlineComponent, FormContactComponent, FormRegisterCompanyComponent],
+  declarations: [
+    FormRegisterSimpleInlineComponent,
+    FormContactComponent,
+    FormRegisterCompanyComponent
+  ],
   imports: [CommonModule, FormsModule],
-  exports: [FormRegisterSimpleInlineComponent, FormContactComponent, FormRegisterCompanyComponent]
+  exports: [
+    FormRegisterSimpleInlineComponent,
+    FormContactComponent,
+    FormRegisterCompanyComponent
+  ]
 })
 export class ActionsModule {}

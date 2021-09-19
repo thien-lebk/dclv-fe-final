@@ -11,18 +11,25 @@ export class SliderTools4SuccessComponent implements OnInit {
   elements = [
     {
       title: 'Dashboard',
-      description: 'Adipisci atque, corporis dicta doloribus eius enim esse fugit iure non quaerat, quod.',
+      description:
+        'Adipisci atque, corporis dicta doloribus eius enim esse fugit iure non quaerat, quod.',
       img: '4'
     },
-    { title: 'Inbox', description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.', img: '1' },
+    {
+      title: 'Inbox',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      img: '1'
+    },
     {
       title: 'Calendar',
-      description: 'Aliquid aspernatur, assumenda cumque esse, excepturi magni mollitia.',
+      description:
+        'Aliquid aspernatur, assumenda cumque esse, excepturi magni mollitia.',
       img: '2'
     },
     {
       title: 'DataTables',
-      description: 'Accusamus cum debitis earum, ex illum impedit in incidunt ipsa.',
+      description:
+        'Accusamus cum debitis earum, ex illum impedit in incidunt ipsa.',
       img: 'datatables'
     }
   ];

@@ -16,7 +16,10 @@ export class ModalVideoComponent implements OnInit, AfterViewInit {
   videoUrl: SafeResourceUrl;
   dialogSize: { width: number; height: number };
 
-  constructor(public sanitizer: DomSanitizer, public ngxSmartModalService: NgxSmartModalService) {}
+  constructor(
+    public sanitizer: DomSanitizer,
+    public ngxSmartModalService: NgxSmartModalService
+  ) {}
 
   ngOnInit() {
     this.videoUrl = this.sanitizer.bypassSecurityTrustResourceUrl(
@@ -25,9 +28,11 @@ export class ModalVideoComponent implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit() {
-    this.ngxSmartModalService.getModal(this.identifier).onOpen.subscribe((modal: NgxSmartModalComponent) => {
-      console.log('Rickroll modal opened!', modal);
-    });
+    this.ngxSmartModalService
+      .getModal(this.identifier)
+      .onOpen.subscribe((modal: NgxSmartModalComponent) => {
+        console.log('Rickroll modal opened!', modal);
+      });
   }
 
   getCustomClass() {

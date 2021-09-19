@@ -13,7 +13,12 @@ import { HomeDemoComponent } from './components/home-demo/home-demo.component';
 import { HomeFooterComponent } from './components/home-footer/home-footer.component';
 
 @NgModule({
-  imports: [SharedModule, SimplebarAngularModule, ScrollToModule.forRoot(), HomeRoutingModule],
+  imports: [
+    SharedModule,
+    SimplebarAngularModule,
+    ScrollToModule.forRoot(),
+    HomeRoutingModule
+  ],
   declarations: [
     HomeComponent,
     HomeHeadingComponent,

@@ -1,6 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { faMapMarker, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import {
+  faMapMarker,
+  faPhone,
+  faEnvelope
+} from '@fortawesome/free-solid-svg-icons';
+import {
+  faFacebook,
+  faTwitter,
+  faInstagram
+} from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'dc-contact-form',

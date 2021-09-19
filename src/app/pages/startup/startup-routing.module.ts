@@ -5,7 +5,11 @@ import { StartupComponent } from './components/startup/startup.component';
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: StartupComponent, data: { title: extract('DashCore - Social Demo') } }
+  {
+    path: '',
+    component: StartupComponent,
+    data: { title: extract('DashCore - Social Demo') }
+  }
 ];
 
 @NgModule({

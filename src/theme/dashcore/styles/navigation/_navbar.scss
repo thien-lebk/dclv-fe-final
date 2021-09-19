@@ -181,7 +181,8 @@ main {
     font-family: $font-family-complementary;
     font-size: $navbar-font-size;
     font-weight: $font-weight-normal;
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
     text-decoration: none;
     letter-spacing: 1px;
     // text-transform: uppercase;
@@ -324,7 +325,10 @@ main {
       }
 
       .btn-solid {
-        @include button-variant($navbar-side-text-color, $navbar-side-text-color);
+        @include button-variant(
+          $navbar-side-text-color,
+          $navbar-side-text-color
+        );
       }
     }
 
@@ -372,7 +376,10 @@ main {
     }
 
     .btn-solid {
-      @include button-variant($navigation-btn-outline-color, $navigation-btn-outline-color);
+      @include button-variant(
+        $navigation-btn-outline-color,
+        $navigation-btn-outline-color
+      );
     }
 
     .dropdown-menu {

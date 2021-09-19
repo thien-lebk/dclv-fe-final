@@ -10,17 +10,20 @@ export class IntegrationHowItWorksComponent implements OnInit {
     {
       icon: 'plan',
       title: 'Choose a plan',
-      description: 'Ab ad aliquam assumenda beatae commodi distinctio dolore dolorum earum error et, exercitationem'
+      description:
+        'Ab ad aliquam assumenda beatae commodi distinctio dolore dolorum earum error et, exercitationem'
     },
     {
       icon: 'payment',
       title: 'Payment method',
-      description: 'Blanditiis cumque, eius error est et exercitationem, explicabo hic natus nobis odit porro quia'
+      description:
+        'Blanditiis cumque, eius error est et exercitationem, explicabo hic natus nobis odit porro quia'
     },
     {
       icon: 'work',
       title: "Let's work",
-      description: 'A animi aperiam cupiditate eum incidunt, magni mollitia nam nemo non officia omnis, quasi quisquam'
+      description:
+        'A animi aperiam cupiditate eum incidunt, magni mollitia nam nemo non officia omnis, quasi quisquam'
     }
   ];
   constructor() {}

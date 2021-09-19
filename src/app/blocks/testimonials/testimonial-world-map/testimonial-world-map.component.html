@@ -28,14 +28,20 @@
 
     <div class="row align-items-center">
       <div class="col-md-6 order-sm-last">
-        <div class=" image-background contain" style="background-image: url(assets/img/shps/map-dots.svg);">
+        <div
+          class=" image-background contain"
+          style="background-image: url(assets/img/shps/map-dots.svg);"
+        >
           <div class="user-reviews" id="user-review-nav">
             <a
               href="javascript:;"
               class="review absolute user nav-item"
               *ngFor="let review of reviews; let i = index"
               [class.active]="i === currentSlide"
-              [ngStyle]="{ left: review.position.left, top: review.position.top }"
+              [ngStyle]="{
+                left: review.position.left,
+                top: review.position.top
+              }"
               [attr.data-step]="i"
               (click)="updateSlider(i)"
             >
@@ -58,8 +64,8 @@
             <blockquote>
               <i class="quote fas fa-quote-left"></i>
               <p class="lead bold">
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,totam
-                rem aperiam.
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium,totam rem aperiam.
               </p>
 
               <hr class="w-10 mt-5" />

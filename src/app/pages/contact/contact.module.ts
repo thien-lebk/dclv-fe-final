@@ -9,7 +9,11 @@ import { ContactFormComponent } from './components/contact-form/contact-form.com
 import { ContactOtherChannelsComponent } from './components/contact-other-channels/contact-other-channels.component';
 
 @NgModule({
-  declarations: [ContactComponent, ContactFormComponent, ContactOtherChannelsComponent],
+  declarations: [
+    ContactComponent,
+    ContactFormComponent,
+    ContactOtherChannelsComponent
+  ],
   imports: [SharedModule, FootersModule, ActionsModule, ContactRoutingModule]
 })
 export class ContactModule {}

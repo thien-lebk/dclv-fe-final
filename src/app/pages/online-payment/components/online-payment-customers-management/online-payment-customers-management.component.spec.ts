@@ -13,7 +13,9 @@ describe('OnlinePaymentCustomersManagementComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(OnlinePaymentCustomersManagementComponent);
+    fixture = TestBed.createComponent(
+      OnlinePaymentCustomersManagementComponent
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

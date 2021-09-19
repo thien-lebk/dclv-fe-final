@@ -8,7 +8,11 @@
       transform: translate(100%, -15%) rotate(65deg);
 
       div {
-        @include triangle-variant(250px, theme-color(primary), theme-color(primary));
+        @include triangle-variant(
+          250px,
+          theme-color(primary),
+          theme-color(primary)
+        );
       }
     }
   }

@@ -13,7 +13,9 @@ describe('BusinessSolutionsIntegrationIconsComponent', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BusinessSolutionsIntegrationIconsComponent);
+    fixture = TestBed.createComponent(
+      BusinessSolutionsIntegrationIconsComponent
+    );
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

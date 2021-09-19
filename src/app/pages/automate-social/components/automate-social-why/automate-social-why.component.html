@@ -7,8 +7,8 @@
     <div class="section-heading text-center">
       <h2 class="bold">Why DashCore</h2>
       <p class="lead text-secondary">
-        Our mission is to provide you with an all-in-one template so you don't have to look aside in order to get what
-        you need
+        Our mission is to provide you with an all-in-one template so you don't
+        have to look aside in order to get what you need
       </p>
     </div>
 
@@ -22,7 +22,10 @@
                   feature.color
                 }} text-contrast p-3 icon-xl d-flex align-items-center justify-content-center mr-3"
               >
-                <dc-feather [name]="feature.icon" [iconClass]="feature.icon"></dc-feather>
+                <dc-feather
+                  [name]="feature.icon"
+                  [iconClass]="feature.icon"
+                ></dc-feather>
               </div>
 
               <div class="media-body">
@@ -36,13 +39,19 @@
 
       <div class="col-md-7">
         <figure data-aos="fade-left">
-          <img src="assets/img/automate-social/build.svg" class="img-responsive" alt="" />
+          <img
+            src="assets/img/automate-social/build.svg"
+            class="img-responsive"
+            alt=""
+          />
         </figure>
       </div>
     </div>
 
     <div class="mt-5 text-center">
-      <a [routerLink]="['/auth/register']" class="btn btn-primary btn-rounded">Register for a free demo</a>
+      <a [routerLink]="['/auth/register']" class="btn btn-primary btn-rounded"
+        >Register for a free demo</a
+      >
       <p class="small">- or -</p>
       <a [routerLink]="['/contact']" class="btn btn-link">Contact us</a>
     </div>

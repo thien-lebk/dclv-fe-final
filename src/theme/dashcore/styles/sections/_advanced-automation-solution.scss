@@ -12,7 +12,8 @@
     background-color: #fff;
     z-index: 0;
     border-radius: 50%;
-    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5), 0 0 125px 15px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5),
+      0 0 125px 15px rgba(255, 255, 255, 0.5);
 
     @include media-breakpoint-up(sm) {
       top: 55%;

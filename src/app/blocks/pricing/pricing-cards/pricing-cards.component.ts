@@ -42,7 +42,8 @@ export class PricingCardsComponent implements OnInit {
       plan: {
         name: 'Business',
         price: 29.99,
-        description: 'For settle companies looking to stay competitive in the market and growing with the technology'
+        description:
+          'For settle companies looking to stay competitive in the market and growing with the technology'
       },
       features: [
         {
@@ -69,7 +70,8 @@ export class PricingCardsComponent implements OnInit {
       plan: {
         name: 'Enterprise',
         price: 99.99,
-        description: 'Everything you can get from a professional solution to keep your business on its way to success'
+        description:
+          'Everything you can get from a professional solution to keep your business on its way to success'
       },
       features: [
         {

@@ -5,7 +5,11 @@ import { BusinessSolutionsComponent } from './components/business-solutions/busi
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: BusinessSolutionsComponent, data: { title: extract('About') } }
+  {
+    path: '',
+    component: BusinessSolutionsComponent,
+    data: { title: extract('About') }
+  }
 ];
 
 @NgModule({

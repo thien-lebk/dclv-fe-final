@@ -5,7 +5,11 @@ import { DevelopersComponent } from './components/developers/developers.componen
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: DevelopersComponent, data: { title: extract('About') } }
+  {
+    path: '',
+    component: DevelopersComponent,
+    data: { title: extract('About') }
+  }
 ];
 
 @NgModule({

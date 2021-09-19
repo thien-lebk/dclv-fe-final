@@ -37,11 +37,19 @@
 
         <div class="row gap-y">
           <div class="col-md-6" *ngFor="let box of boxes">
-            <div class="media flex-column flex-lg-row align-items-center align-items-md-start">
-              <dc-feather [name]="box.icon" class="mx-auto ml-md-0 mr-md-3" [iconClass]="'stroke-primary'"></dc-feather>
+            <div
+              class="media flex-column flex-lg-row align-items-center align-items-md-start"
+            >
+              <dc-feather
+                [name]="box.icon"
+                class="mx-auto ml-md-0 mr-md-3"
+                [iconClass]="'stroke-primary'"
+              ></dc-feather>
               <div class="media-body mt-3 mt-md-0">
                 <h5 class="bold mt-0 mb-1">{{ box.title }}</h5>
-                <p class="m-0 d-md-none d-lg-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="m-0 d-md-none d-lg-block">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
               </div>
             </div>
           </div>

@@ -8,14 +8,22 @@
           *ngFor="let block of blocks; let i = index"
         >
           <div class="icon-shape mb-4">
-            <img src="assets/img/shps/bullets/{{ i + 1 }}.svg" class="shape shape-xxl icon-xxl" alt="" />
+            <img
+              src="assets/img/shps/bullets/{{ i + 1 }}.svg"
+              class="shape shape-xxl icon-xxl"
+              alt=""
+            />
 
             <div
               class="rounded-circle {{
                 block.class
               }} p-3 d-flex align-items-center justify-content-center shadow icon-xl center-xy"
             >
-              <img src="assets/img/demo/logo/{{ block.icon }}.svg" class="img-responsive" alt="" />
+              <img
+                src="assets/img/demo/logo/{{ block.icon }}.svg"
+                class="img-responsive"
+                alt=""
+              />
             </div>
           </div>
 

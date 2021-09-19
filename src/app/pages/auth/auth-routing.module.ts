@@ -13,9 +13,21 @@ const routes: Routes = [
     component: AuthLayoutComponent,
     children: [
       { path: '', redirectTo: 'login', pathMatch: 'full' },
-      { path: 'login', component: LoginComponent, data: { title: extract('Login') } },
-      { path: 'register', component: RegisterComponent, data: { title: extract('Register') } },
-      { path: 'forgot', component: ForgotComponent, data: { title: extract('Forgot Password') } }
+      {
+        path: 'login',
+        component: LoginComponent,
+        data: { title: extract('Login') }
+      },
+      {
+        path: 'register',
+        component: RegisterComponent,
+        data: { title: extract('Register') }
+      },
+      {
+        path: 'forgot',
+        component: ForgotComponent,
+        data: { title: extract('Forgot Password') }
+      }
     ]
   },
 

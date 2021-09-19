@@ -5,7 +5,13 @@
   font-family: $btn-font-family;
   font-weight: $btn-font-weight;
   text-transform: $btn-text-transform;
-  @include button-size(0.5rem, 1.25rem, $btn-font-size, $btn-line-height, $btn-border-radius);
+  @include button-size(
+    0.5rem,
+    1.25rem,
+    $btn-font-size,
+    $btn-line-height,
+    $btn-border-radius
+  );
   white-space: normal;
   text-align: left;
 }

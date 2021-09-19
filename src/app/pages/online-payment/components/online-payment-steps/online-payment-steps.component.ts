@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faUser, faUsersCog, faUserShield } from '@fortawesome/free-solid-svg-icons';
+import {
+  faUser,
+  faUsersCog,
+  faUserShield
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'dc-online-payment-steps',

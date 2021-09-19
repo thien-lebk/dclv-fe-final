@@ -1,31 +1,60 @@
-<dc-navbar-shell [darkLinks]="darkLinks" [useOnlyDarkLogo]="darkLinks ? true : useOnlyDarkLogo">
+<dc-navbar-shell
+  [darkLinks]="darkLinks"
+  [useOnlyDarkLogo]="darkLinks ? true : useOnlyDarkLogo"
+>
   <ul class="nav navbar-nav" [class.ml-auto]="isRightPositioned()">
-    <li class="nav-item"><a class="nav-link" [routerLink]="['/home']">Home</a></li>
-    <li class="nav-item"><a class="nav-link" [routerLink]="['/about']">About</a></li>
-    <li class="nav-item"><a class="nav-link" [routerLink]="['/contact']">Contact</a></li>
-    <li class="nav-item"><a class="nav-link" [routerLink]="['/faqs']">Faqs</a></li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/home']">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/about']">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" [routerLink]="['/faqs']">Faqs</a>
+    </li>
 
-    <li class="nav-item dropdown mega" ngbDropdown placement="bottom left right">
-      <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:;">Demos</a>
+    <li
+      class="nav-item dropdown mega"
+      ngbDropdown
+      placement="bottom left right"
+    >
+      <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:;"
+        >Demos</a
+      >
       <div class="dropdown-menu dropdown-menu-right p-3" ngbDropdownMenu>
         <div class="row">
           <div class="col-md-4">
             <p class="dropdown-heading bold mt-0 pt-0">Company</p>
-            <a class="dropdown-item" [routerLink]="['/app-landing']">App Landing</a>
-            <a class="dropdown-item" [routerLink]="['/app-landing-2']">App Landing 2</a>
-            <a class="dropdown-item" [routerLink]="['/automate-social']">Marketing</a>
+            <a class="dropdown-item" [routerLink]="['/app-landing']"
+              >App Landing</a
+            >
+            <a class="dropdown-item" [routerLink]="['/app-landing-2']"
+              >App Landing 2</a
+            >
+            <a class="dropdown-item" [routerLink]="['/automate-social']"
+              >Marketing</a
+            >
           </div>
 
           <div class="col-md-4">
             <p class="dropdown-heading bold mt-0 pt-0">Product</p>
             <a class="dropdown-item" [routerLink]="['/corporate']">Corporate</a>
-            <a class="dropdown-item" [routerLink]="['/developers']">Developers</a>
-            <a class="dropdown-item" [routerLink]="['/online-payment']">Payments</a>
+            <a class="dropdown-item" [routerLink]="['/developers']"
+              >Developers</a
+            >
+            <a class="dropdown-item" [routerLink]="['/online-payment']"
+              >Payments</a
+            >
           </div>
 
           <div class="col-md-4">
             <p class="dropdown-heading bold mt-0 pt-0">Services</p>
-            <a class="dropdown-item" [routerLink]="['/integration']">Integration</a>
+            <a class="dropdown-item" [routerLink]="['/integration']"
+              >Integration</a
+            >
             <a class="dropdown-item" [routerLink]="['/saas']">Saas</a>
             <a class="dropdown-item" [routerLink]="['/startup']">Startup</a>
           </div>
@@ -34,7 +63,9 @@
     </li>
 
     <li class="nav-item dropdown mega" ngbDropdown placement="bottom-right">
-      <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:;">Product</a>
+      <a class="nav-link dropdown-toggle" ngbDropdownToggle href="javascript:;"
+        >Product</a
+      >
 
       <div class="dropdown-menu dropdown-menu-right" ngbDropdownMenu>
         <div class="container-fluid">
@@ -54,9 +85,14 @@
                 Think about<span class="bold d-block">your business</span>
               </h3>
               <p class="text-secondary">
-                Our best bet is you, we can ensure that our template will fit most of your needs.
+                Our best bet is you, we can ensure that our template will fit
+                most of your needs.
               </p>
-              <a [routerLink]="['pricing']" class="btn btn-rounded btn-info mt-3">View plan &amp; prices</a>
+              <a
+                [routerLink]="['pricing']"
+                class="btn btn-rounded btn-info mt-3"
+                >View plan &amp; prices</a
+              >
             </div>
           </div>
         </div>
@@ -68,12 +104,21 @@
     class="nav navbar-nav justify-content-center mt-4 mt-md-0 flex-row"
     [ngClass]="{ 'ml-md-auto': !isRightPositioned() }"
   >
-    <a class="btn btn-rounded btn-outline mr-3 px-3" [routerLink]="['/auth/login']">
-      <fa-icon [icon]="signInAlt" class="d-none d-md-inline mr-md-0 mr-lg-2"></fa-icon>
+    <a
+      class="btn btn-rounded btn-outline mr-3 px-3"
+      [routerLink]="['/auth/login']"
+    >
+      <fa-icon
+        [icon]="signInAlt"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"
+      ></fa-icon>
       <span class="d-md-none d-lg-inline">Login</span>
     </a>
     <a class="btn btn-rounded btn-solid px-3" [routerLink]="['/auth/register']">
-      <fa-icon [icon]="userPlus" class="d-none d-md-inline mr-md-0 mr-lg-2"></fa-icon>
+      <fa-icon
+        [icon]="userPlus"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"
+      ></fa-icon>
       <span class="d-md-none d-lg-inline">Signup</span>
     </a>
   </nav>

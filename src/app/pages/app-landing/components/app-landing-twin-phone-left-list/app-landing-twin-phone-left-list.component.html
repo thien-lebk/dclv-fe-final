@@ -31,14 +31,21 @@
         </div>
 
         <ul class="list-unstyled">
-          <li class="media flex-column flex-md-row" *ngFor="let feature of elements">
+          <li
+            class="media flex-column flex-md-row"
+            *ngFor="let feature of elements"
+          >
             <!-- {{ " mt-3" if loop.index > 1 }} -->
-            <dc-feather [name]="feature.icon" class="mx-auto mr-md-3" [iconClass]="'stroke-primary'"></dc-feather>
+            <dc-feather
+              [name]="feature.icon"
+              class="mx-auto mr-md-3"
+              [iconClass]="'stroke-primary'"
+            ></dc-feather>
             <div class="media-body mt-3 mt-md-0">
               <h5 class="bold mt-0 mb-1">{{ feature.title }}</h5>
               <p class="m-0">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aut autem eum laudantium quas recusandae
-                repellendus voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet
+                aut autem eum laudantium quas recusandae repellendus voluptate.
               </p>
             </div>
           </li>

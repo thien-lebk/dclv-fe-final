@@ -9,13 +9,15 @@ export class HomeFeaturesComponent implements OnInit {
   blocks: object = [
     {
       title: 'Boostrap 4',
-      description: 'Powered with one of the most popular front-end CSS toolkits.',
+      description:
+        'Powered with one of the most popular front-end CSS toolkits.',
       icon: 'bootstrap',
       class: 'bg-primary shadow-3'
     },
     {
       title: 'Angular',
-      description: 'One framework. Mobile & desktopModule Bundler for modern JavaScript applications.',
+      description:
+        'One framework. Mobile & desktopModule Bundler for modern JavaScript applications.',
       icon: 'angular',
       class: 'gradient gradient-blue-purple shadow-4'
     },

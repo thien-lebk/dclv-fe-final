@@ -28,6 +28,15 @@ import { AppLanding2DownloadComponent } from './components/app-landing2-download
     AppLanding2PoppingHighlightComponent,
     AppLanding2DownloadComponent
   ],
+  exports: [
+    AppLanding2HeadingComponent,
+    AppLanding2TrendingDesignComponent,
+    AppLanding2FocusOnSuccessComponent,
+    AppLanding2SafetyComponent,
+    AppLanding2FeaturesComponent,
+    AppLanding2PoppingHighlightComponent,
+    AppLanding2DownloadComponent
+  ],
   imports: [
     SharedModule,
     CountersModule,

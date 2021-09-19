@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faLongArrowAltRight, faLongArrowAltLeft, faQuoteLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faLongArrowAltRight,
+  faLongArrowAltLeft,
+  faQuoteLeft
+} from '@fortawesome/free-solid-svg-icons';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 @Component({
@@ -15,13 +19,48 @@ export class TestimonialSingleBoxedComponent implements OnInit {
   };
 
   reviews = [
-    { author: 'Jane Doe', title: ['Social ', 'Integration'], description: '', image: '' },
-    { author: 'Lorem Team', title: ['Design ', 'Strategy'], description: '', image: '' },
-    { author: 'Ipsum Team', title: ['Save ', 'Money'], description: '', image: '' },
-    { author: 'Priscilla Campbell', title: ['Business ', 'Brain'], description: '', image: '' },
-    { author: 'Edith Fisher', title: ['Worldwide ', 'Support'], description: '', image: '' },
-    { author: 'Kenneth Reyes', title: ['Social ', 'Settings'], description: '', image: '' },
-    { author: 'Daniel Hamilton', title: ['Insightful', 'Statistics'], description: '', image: '' }
+    {
+      author: 'Jane Doe',
+      title: ['Social ', 'Integration'],
+      description: '',
+      image: ''
+    },
+    {
+      author: 'Lorem Team',
+      title: ['Design ', 'Strategy'],
+      description: '',
+      image: ''
+    },
+    {
+      author: 'Ipsum Team',
+      title: ['Save ', 'Money'],
+      description: '',
+      image: ''
+    },
+    {
+      author: 'Priscilla Campbell',
+      title: ['Business ', 'Brain'],
+      description: '',
+      image: ''
+    },
+    {
+      author: 'Edith Fisher',
+      title: ['Worldwide ', 'Support'],
+      description: '',
+      image: ''
+    },
+    {
+      author: 'Kenneth Reyes',
+      title: ['Social ', 'Settings'],
+      description: '',
+      image: ''
+    },
+    {
+      author: 'Daniel Hamilton',
+      title: ['Insightful', 'Statistics'],
+      description: '',
+      image: ''
+    }
   ];
 
   config: SwiperConfigInterface = {

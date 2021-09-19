@@ -52,7 +52,12 @@ $app-landing-2-shapes-map: (
       height: 140,
       width: 400,
       attrs: (
-        "background-image": linear-gradient(45deg, theme-color("primary") 35%, theme-color("secondary") 110%)
+        "background-image":
+          linear-gradient(
+            45deg,
+            theme-color("primary") 35%,
+            theme-color("secondary") 110%
+          )
       )
     ),
     (
@@ -61,7 +66,12 @@ $app-landing-2-shapes-map: (
       height: 100,
       width: 300,
       attrs: (
-        "background-image": linear-gradient(90deg, theme-color("primary") 0, theme-color("secondary") 100%)
+        "background-image":
+          linear-gradient(
+            90deg,
+            theme-color("primary") 0,
+            theme-color("secondary") 100%
+          )
       )
     ),
     (
@@ -70,7 +80,12 @@ $app-landing-2-shapes-map: (
       height: 200,
       width: 600,
       attrs: (
-        "background-image": linear-gradient(90deg, theme-color("primary") 0, theme-color("secondary") 100%)
+        "background-image":
+          linear-gradient(
+            90deg,
+            theme-color("primary") 0,
+            theme-color("secondary") 100%
+          )
       )
     ),
     (

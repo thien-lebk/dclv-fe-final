@@ -5,7 +5,11 @@ import { SocialComponent } from './components/social/social.component';
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
-  { path: '', component: SocialComponent, data: { title: extract('DashCore - Social Demo') } }
+  {
+    path: '',
+    component: SocialComponent,
+    data: { title: extract('DashCore - Social Demo') }
+  }
 ];
 
 @NgModule({
