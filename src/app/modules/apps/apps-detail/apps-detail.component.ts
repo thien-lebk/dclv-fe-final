@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import {
+  AppItemTypeEnum,
+  TokenEnpoint
+} from '@app/modules/apps/_modal/app-list-item-dto';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'dc-apps-detail',
@@ -6,7 +11,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./apps-detail.component.scss']
 })
 export class AppsDetailComponent implements OnInit {
-  constructor() {}
+  listAppType = [
+    AppItemTypeEnum.SinglePageWebApplication,
+    AppItemTypeEnum.MachineToMachineApplication,
+    AppItemTypeEnum.Native,
+    AppItemTypeEnum.RegularWebApplication
+  ];
+  tokenEnPoint = [TokenEnpoint.None, TokenEnpoint.Basic, TokenEnpoint.Post];
+  logoSrc =
+    'https://cdn.auth0.com/manhattan/versions/1.3420.0/assets/badge.png';
 
-  ngOnInit(): void {}
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.data.subscribe(v => console.log(v));
+  }
 }

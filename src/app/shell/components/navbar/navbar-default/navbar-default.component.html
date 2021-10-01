@@ -139,6 +139,7 @@
     <a
       class="btn btn-rounded btn-outline mr-3 px-3"
       [routerLink]="['/auth/login']"
+      *ngIf="!isAuthenticated"
     >
       <fa-icon
         [icon]="signInAlt"
@@ -146,12 +147,27 @@
       ></fa-icon>
       <span class="d-md-none d-lg-inline">Login</span>
     </a>
-    <a class="btn btn-rounded btn-solid px-3" [routerLink]="['/auth/register']">
+    <a
+      *ngIf="!isAuthenticated"
+      class="btn btn-rounded btn-solid px-3"
+      [routerLink]="['/auth/register']"
+    >
       <fa-icon
         [icon]="userPlus"
         class="d-none d-md-inline mr-md-0 mr-lg-2"
       ></fa-icon>
-      <span class="d-md-none d-lg-inline">Signup</span>
+      <span class="d-md-none d-lg-inline">Sign up</span>
+    </a>
+    <a
+      *ngIf="isAuthenticated"
+      class="btn btn-rounded btn-solid px-3"
+      [routerLink]="['/auth/login']"
+    >
+      <fa-icon
+        [icon]="singOutAlt"
+        class="d-none d-md-inline mr-md-0 mr-lg-2"
+      ></fa-icon>
+      <span class="d-md-none d-lg-inline" (click)="signOut()">Sign out</span>
     </a>
   </nav>
 </dc-navbar-shell>

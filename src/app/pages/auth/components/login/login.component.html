@@ -4,9 +4,15 @@
   <a [routerLink]="['../register']" class="text-primary bold">Create it here</a>
 </p>
 
-<form class="cozy" action="srv/login.php" data-validate-on="submit" novalidate>
+<form
+  [formGroup]="profileForm"
+  class="cozy"
+  action="srv/login.php"
+  data-validate-on="submit"
+  novalidate
+>
   <label class="control-label bold small text-uppercase text-secondary"
-    >Username</label
+    >Email</label
   >
   <div class="form-group has-icon">
     <input
@@ -16,6 +22,7 @@
       class="form-control form-control-rounded"
       placeholder="Your registered username"
       required
+      formControlName="email"
     />
     <fa-icon [icon]="fa.user" class="icon"></fa-icon>
   </div>
@@ -31,6 +38,7 @@
       class="form-control form-control-rounded"
       placeholder="Your password"
       required
+      formControlName="password"
     />
     <fa-icon [icon]="fa.lock" class="icon"></fa-icon>
   </div>
@@ -42,7 +50,7 @@
     <div class="ajax-button">
       <div class="fas fa-check btn-status text-success success"></div>
       <div class="fas fa-times btn-status text-danger failed"></div>
-      <button type="submit" class="btn btn-primary btn-rounded">
+      <button (click)="onSubmit()" class="btn btn-primary btn-rounded">
         Login <fa-icon [icon]="fa.longArrowAltRight" class="ml-2"></fa-icon>
       </button>
     </div>

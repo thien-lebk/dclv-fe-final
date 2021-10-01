@@ -6,6 +6,9 @@ import {
   faEnvelope,
   faLock
 } from '@fortawesome/free-solid-svg-icons';
+import { AuthenticationService, CredentialsService } from '@app/core';
+import { Router } from '@angular/router';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'dc-register',
@@ -20,8 +23,19 @@ export class RegisterComponent implements OnInit {
     envelope: faEnvelope,
     lock: faLock
   };
+  profileForm = new FormGroup({
+    email: new FormControl(''),
+    password: new FormControl('')
+  });
+  constructor(
+    private auth$: AuthenticationService,
+    private cre$: CredentialsService,
+    private router: Router
+  ) {}
 
-  constructor() {}
-
-  ngOnInit() {}
+  ngOnInit() {
+    if (this.cre$.isAuthenticated()) {
+      this.router.navigateByUrl('/');
+    }
+  }
 }

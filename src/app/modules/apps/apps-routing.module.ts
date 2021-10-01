@@ -4,6 +4,7 @@ import { extract } from '@app/core';
 import { AppListComponent } from './app-list/app-list.component';
 import { AppCreateComponent } from '../app-create/app-create.component';
 import { AppsDetailComponent } from './apps-detail/apps-detail.component';
+import { AppcreateDto } from '../app-create/_modal/app-create-dto';
 
 const routes: Routes = [
   // Module is lazy loaded, see app-routing.module.ts
@@ -18,9 +19,9 @@ const routes: Routes = [
     data: { title: extract('Create Application') }
   },
   {
-    path: 'detail',
+    path: 'detail/:id',
     component: AppsDetailComponent,
-    data: { title: extract('Create Application') }
+    data: { title: extract('Detail Application'), item: AppcreateDto }
   }
 ];
 

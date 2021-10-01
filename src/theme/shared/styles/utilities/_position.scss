@@ -31,3 +31,6 @@
 .center-flex {
   @include center-flex();
 }
+.margin-auto {
+  margin: auto !important;
+}

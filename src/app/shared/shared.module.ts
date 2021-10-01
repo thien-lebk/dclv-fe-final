@@ -62,6 +62,10 @@ import { LoaderComponent } from './loader/loader.component';
 import { PageHeaderWaveComponent } from './page-header-wave/page-header-wave.component';
 import { FeatherComponent } from './feather/feather.component';
 import { BadgeComponent } from './badge/badge.component';
+import { CopyComponent } from './components/copy/copy.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 // Select some icons (use an object, not an array)
 const icons = {
@@ -123,13 +127,17 @@ const icons = {
     CommonModule,
     HttpClientModule,
     FeatherModule.pick(icons),
-    FontAwesomeModule
+    FontAwesomeModule,
+    ClipboardModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule
   ],
   declarations: [
     LoaderComponent,
     PageHeaderWaveComponent,
     FeatherComponent,
-    BadgeComponent
+    BadgeComponent,
+    CopyComponent
   ],
   exports: [
     LoaderComponent,
@@ -139,7 +147,8 @@ const icons = {
 
     CommonModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    CopyComponent
   ]
 })
 export class SharedModule {}

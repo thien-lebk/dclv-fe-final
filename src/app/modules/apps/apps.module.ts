@@ -13,6 +13,10 @@ import { ShellModule } from '../../shell/shell.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FeatherModule } from 'angular-feather';
 import { AppsDetailComponent } from './apps-detail/apps-detail.component';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { FormsModule } from '@angular/forms';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [AppListComponent, AppsDetailComponent],
@@ -27,7 +31,11 @@ import { AppsDetailComponent } from './apps-detail/apps-detail.component';
     SwiperModule,
     ShellModule,
     NgbModule,
-    FeatherModule
+    FeatherModule,
+    ClipboardModule,
+    FormsModule,
+    MatSlideToggleModule,
+    MatIconModule
   ]
 })
 export class AppsModule {}

@@ -15,6 +15,12 @@ import { FaqsModule } from '@app/blocks/faqs/faqs.module';
 import { CtaModule } from '@app/blocks/cta/cta.module';
 import { FootersModule } from '@app/blocks/footers/footers.module';
 import { AppCreateComponent } from './modules/app-create/app-create.component';
+import { JwtModule } from '@auth0/angular-jwt';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { FormsModule } from '@angular/forms';
+export function tokenGetter() {
+  return localStorage.getItem('access_token');
+}
 
 @NgModule({
   imports: [
@@ -30,8 +36,17 @@ import { AppCreateComponent } from './modules/app-create/app-create.component';
     CountersModule,
     FaqsModule,
     CtaModule,
-    FootersModule
+    FootersModule,
     // must be imported as the last module as it contains the fallback route
+    JwtModule.forRoot({
+      config: {
+        tokenGetter,
+        allowedDomains: ['http://www.kietteik.xyz']
+        // disallowedRoutes: ['http://example.com/examplebadroute/'],
+      }
+    }),
+    MatButtonToggleModule,
+    FormsModule
   ],
   declarations: [AppComponent, AppCreateComponent],
   providers: [],

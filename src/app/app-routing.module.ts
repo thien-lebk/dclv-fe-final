@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { Shell } from '@app/shell/services/shell.service';
+import { AuthenticationGuard } from '@app/core';
 
 const routes: Routes = [
   Shell.childRoutes([
@@ -116,10 +117,17 @@ const routes: Routes = [
   },
   {
     path: 'applications',
+    canActivate: [AuthenticationGuard],
+
     loadChildren: () =>
       import('./modules/apps/apps.module').then(m => m.AppsModule)
   },
-
+  {
+    path: 'client',
+    canActivate: [AuthenticationGuard],
+    loadChildren: () =>
+      import('./modules/client/client.module').then(m => m.ClientModule)
+  },
   // Fallback when no prior route is matched
   { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

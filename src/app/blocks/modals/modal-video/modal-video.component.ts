@@ -31,7 +31,7 @@ export class ModalVideoComponent implements OnInit, AfterViewInit {
     this.ngxSmartModalService
       .getModal(this.identifier)
       .onOpen.subscribe((modal: NgxSmartModalComponent) => {
-        console.log('Rickroll modal opened!', modal);
+        console.log('Rickroll _modal opened!', modal);
       });
   }
 

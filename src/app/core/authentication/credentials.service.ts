@@ -1,9 +1,14 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { JwtHelperService } from '@auth0/angular-jwt';
+import { AuthenticationService } from '@app/core';
+import { Observable } from 'rxjs';
+import { MainSource } from '@app/core/authentication/_source';
 
 export interface Credentials {
   // Customize received credentials here
-  username: string;
-  token: string;
+  refresh: string;
+  access: string;
 }
 
 const credentialsKey = 'credentials';
@@ -18,7 +23,7 @@ const credentialsKey = 'credentials';
 export class CredentialsService {
   private _credentials: Credentials | null = null;
 
-  constructor() {
+  constructor(public jwtHelper: JwtHelperService, private http: HttpClient) {
     const savedCredentials =
       sessionStorage.getItem(credentialsKey) ||
       localStorage.getItem(credentialsKey);
@@ -32,7 +37,19 @@ export class CredentialsService {
    * @return True if the user is authenticated.
    */
   isAuthenticated(): boolean {
-    return !!this.credentials;
+    const token = localStorage.getItem('access');
+    console.log(token);
+    if (!token) {
+      return false;
+    } else if (this.jwtHelper.isTokenExpired(token)) {
+      const tokenR = localStorage.getItem('refresh');
+      this.getNewToken(tokenR).subscribe(res => {
+        localStorage.setItem('refresh', res.refresh);
+        localStorage.setItem('access', res.access);
+        return true;
+      });
+    }
+    return true;
   }
 
   /**
@@ -60,5 +77,17 @@ export class CredentialsService {
       sessionStorage.removeItem(credentialsKey);
       localStorage.removeItem(credentialsKey);
     }
+  }
+  getNewToken(refresh: string): Observable<Credentials> {
+    const url = `${MainSource.route}/users/refresh/`;
+    const data = { refresh };
+    const body = JSON.stringify(data);
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+        // Authorization: 'my-auth-token'
+      })
+    };
+    return this.http.post<any>(url, body, httpOptions);
   }
 }

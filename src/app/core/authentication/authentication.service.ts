@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 
 import { Credentials, CredentialsService } from './credentials.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { JwtHelperService } from '@auth0/angular-jwt';
+import { MainSource } from '@app/core/authentication/_source';
 
 export interface LoginContext {
   username: string;
@@ -17,7 +20,11 @@ export interface LoginContext {
   providedIn: 'root'
 })
 export class AuthenticationService {
-  constructor(private credentialsService: CredentialsService) {}
+  constructor(
+    private credentialsService: CredentialsService,
+    private http: HttpClient,
+    public jwtHelper: JwtHelperService
+  ) {}
 
   /**
    * Authenticates the user.
@@ -25,13 +32,15 @@ export class AuthenticationService {
    * @return The user credentials.
    */
   login(context: LoginContext): Observable<Credentials> {
-    // Replace by proper authentication call
-    const data = {
-      username: context.username,
-      token: '123456'
+    const url = `${MainSource.route}/users/token/`;
+    const body = JSON.stringify(context);
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+        // Authorization: 'my-auth-token'
+      })
     };
-    this.credentialsService.setCredentials(data, context.remember);
-    return of(data);
+    return this.http.post<any>(url, body, httpOptions);
   }
 
   /**
@@ -42,5 +51,17 @@ export class AuthenticationService {
     // Customize credentials invalidation here
     this.credentialsService.setCredentials();
     return of(true);
+  }
+  getNewToken(refresh: string): Observable<Credentials> {
+    const url = `${MainSource.route}/users/token/`;
+    const data = { refresh };
+    const body = JSON.stringify(data);
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+        // Authorization: 'my-auth-token'
+      })
+    };
+    return this.http.post<any>(url, body, httpOptions);
   }
 }

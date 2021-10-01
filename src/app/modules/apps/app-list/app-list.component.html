@@ -8,61 +8,96 @@
       >
         Create new app
       </button>
+      <div class="wrap-cont ">
+        <div class="wrap-name">
+          <div class="client-name">
+            <span>{{ currItem.name }}</span>
+          </div>
+          <div class="mode">
+            <span>{{ currItem.mode }}</span>
+          </div>
+        </div>
+        <div class="dropdown-icon">
+          <mat-icon>expand_more</mat-icon>
+        </div>
+        <div class="dropdown-menu border-10">
+          <div class="wrap-list border-10">
+            <div class="search">
+              <input
+                type="text"
+                placeholder="Search..."
+                (input)="changeSeachForm($event)"
+              />
+            </div>
+            <div class="list-item">
+              <div
+                class="item"
+                *ngFor="let item of listItem"
+                (click)="changeItem(item.name, item.authorization_grant_type)"
+              >
+                <span class="c-name">{{ item.name }}</span>
+                <!--              <span class="domain">Domain</span>-->
+                <span class="develop">{{ item.authorization_grant_type }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="setting">
+            <span>Setting</span>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="list-app">
-      <div class="app border-10 border color-primary my-4">
-        <div class="wrap-img cursor-pointer" [routerLink]="['../', 'detail']">
+      <div
+        *ngFor="let item of listItem"
+        class="app border-10 border color-primary my-4"
+      >
+        <div
+          class="wrap-img cursor-pointer"
+          [routerLink]="['../', 'detail', item.id]"
+        >
           <img
             class="border-10"
-            src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/9/13/photo-1-1631488187952925878697.jpg"
+            [src]="
+              'https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/9/13/photo-1-1631488187952925878697.jpg'
+            "
             alt=""
           />
         </div>
-        <div class="name cursor-pointer" [routerLink]="['../', 'detail']">
-          <span class="app-name text-dark">Application 1</span>
-          <span class="type text-dark">Application 1</span>
+        <div
+          class="name cursor-pointer"
+          [routerLink]="['../', 'detail', item.id]"
+        >
+          <span class="app-name text-dark">{{ item.name }}</span>
+          <span class="type text-dark">{{ item.type }}</span>
         </div>
-        <div class="client-id">
-          <span>Client ID: Qa93sezCtVPI9fvi4HBE91jyOoHabdZz</span>
-          <img src="../../../../assets/images/user-app/Copy.png" alt="" />
+
+        <div class="client-id d-flex">
+          <span>Client ID: {{ item.client_id }}</span>
+          <dc-copy [content]="item.client_id"></dc-copy>
         </div>
-        <div class="action-op bg-secondary border-10">...</div>
-      </div>
-      <div class="app border-10 border color-primary my-4">
-        <div class="wrap-img">
-          <img
-            class="border-10"
-            src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/9/13/photo-1-1631488187952925878697.jpg"
-            alt=""
-          />
+        <div ngbDropdown class="d-inline-block action-op">
+          <div
+            style="height: 30px"
+            class="cursor-pointer bg-secondary border-10"
+            ngbDropdownToggle
+          >
+            ...
+          </div>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <button ngbDropdownItem>Quick start</button>
+            <a
+              ngbDropdownItem
+              [routerLink]="['../', 'detail', item.id]"
+              [state]="item"
+            >
+              Settings
+            </a>
+            <button ngbDropdownItem>Addons</button>
+            <button ngbDropdownItem>Connections</button>
+            <button ngbDropdownItem>Organizations</button>
+          </div>
         </div>
-        <div class="name">
-          <span class="app-name text-dark">Application 1</span>
-          <span class="type text-dark">Application 1</span>
-        </div>
-        <div class="client-id">
-          <span>Client ID: Qa93sezCtVPI9fvi4HBE91jyOoHabdZz</span>
-          <img src="../../../../assets/images/user-app/Copy.png" alt="" />
-        </div>
-        <div class="action-op bg-secondary border-10">...</div>
-      </div>
-      <div class="app border-10 border color-primary my-4">
-        <div class="wrap-img">
-          <img
-            class="border-10"
-            src="https://genk.mediacdn.vn/thumb_w/660/139269124445442048/2021/9/13/photo-1-1631488187952925878697.jpg"
-            alt=""
-          />
-        </div>
-        <div class="name">
-          <span class="app-name text-dark">Application 1</span>
-          <span class="type text-dark">Application 1</span>
-        </div>
-        <div class="client-id">
-          <span>Client ID: Qa93sezCtVPI9fvi4HBE91jyOoHabdZz</span>
-          <img src="../../../../assets/images/user-app/Copy.png" alt="" />
-        </div>
-        <div class="action-op bg-secondary border-10">...</div>
       </div>
     </div>
   </div>
