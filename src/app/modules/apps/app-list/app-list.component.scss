@@ -3,6 +3,7 @@
 }
 .wrap-content {
   padding-top: 24px;
+  height: calc(100vh - 90px);
   .container {
     .header {
       .create-app {
@@ -80,8 +81,9 @@
   }
 }
 .wrap-cont {
+  width: 150px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  //grid-template-columns: 1fr 1fr;
   position: relative;
   .wrap-name {
     .client-name {
@@ -111,7 +113,7 @@
         input {
           font-size: 14px;
           border: none;
-          background-color: red;
+          background-color: white;
           padding: 5px;
           border-radius: 10px;
         }
@@ -132,7 +134,7 @@
         }
       }
       .list-item {
-        max-height: 250px;
+        max-height: 200px;
         height: auto;
         overflow-x: hidden;
         .item {

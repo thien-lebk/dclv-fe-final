@@ -36,7 +36,9 @@ export class AppCreateComponent implements OnInit {
     data.name = this.appName;
     data.authorization_grant_type = this.selectedAuthorizationGrantType;
     data.client_type = this.clientType;
-    this.appCreate$.createApp(data, 'thientest5').subscribe(data2 => {
+    const clientName = localStorage.getItem('client');
+
+    this.appCreate$.createApp(data, clientName).subscribe(data2 => {
       this.appLoading$.stopLoadingForm();
     });
   }

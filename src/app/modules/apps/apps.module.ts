@@ -17,6 +17,7 @@ import { ClipboardModule } from '@angular/cdk/clipboard';
 import { FormsModule } from '@angular/forms';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [AppListComponent, AppsDetailComponent],
@@ -35,7 +36,8 @@ import { MatIconModule } from '@angular/material/icon';
     ClipboardModule,
     FormsModule,
     MatSlideToggleModule,
-    MatIconModule
+    MatIconModule,
+    MatProgressBarModule
   ]
 })
 export class AppsModule {}
